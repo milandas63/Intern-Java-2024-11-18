@@ -1,0 +1,58 @@
+Start Date: 18-11-2024
+Time: Monday to Friday (10:00 am-12:00 am)
+Course: JAVA FULL-STACK
+Whatsapp group: IIG
+GitHub-ID: https://github.com/milandas63/Intern-Java-2024-11-18
+Wifi Password: #A1B2C3E5D4#
+
+Participants:
+MILAN DAS                   7978168568  milandas63@gmail.com                milandas63
+1.  Sonali Das              8018260656  sonali273das@gmail.com              Sonalidas28
+2.  Suraj Samal             9337751724  surajsamal514@gmail.com             suraj51444
+
++--------------------+
+| Monday, 18-11-2024 |  Day-01
++--------------------+
+    =   The for loop:
+        
+            for([intiallizer] ; [condition] ; [increment/decrement]) [{]
+                ...
+            [}]
+
+    =   How many keywords are there in Java?
+            LIST OF RESERVE WORDS/KEY WORDS IN JAVA (53 words)
+            abstract    continue    for         new         switch
+            assert***   default     goto*       package     synchronized
+            boolean     do          if          private     this
+            break       double      implements  protected   throw
+            byte        else        import      public      throws
+            case        enum****    instanceof  return      transient
+            catch       extends     int         short       try
+            char        final       interface   static      void
+            class       finally     long        strictfp**  volatile
+            const*      float       native      super       while
+            null        true        false
+
+            *       not used
+            **      added in 1.2
+            ***     added in 1.4
+            ****    added in 5.0
+
++---------------------+
+| Tuesday, 19-11-2024 |  Day-02
++---------------------+
+    =   Write a program to draw a triangle of palindrome numbers?
+
+    =   Write a program to print all odd numbers between 25 to 45.
+
+    =   Write a program to print the following series:
+
+            1 2 4 7 11 16 21 .....
+
+    =   Write a program to draw the following pattern:
+
+            123456789
+            987654321
+            123456789
+            987654321
+
