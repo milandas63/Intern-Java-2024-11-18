@@ -113,7 +113,7 @@ MILAN DAS                   7978168568  milandas63@gmail.com                mila
                 5.  float       Floating Point  32 bits                     java.lang.Float
                 6.  double*     Floating Point  64 bits                     java.lang.Double
                 7.  char        Unicode         16 bit                      java.lang.Character
-                8.  boolean     True/False      1 bit
+                8.  boolean     True/False      1 bit                       java.lang.Boolean
             2.  reference data type
                 Rest every thing is reference data type.
 
