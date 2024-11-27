@@ -219,6 +219,11 @@ MILAN DAS                   7978168568  milandas63@gmail.com                mila
 +--------------------+
 | Monday, 25-11-2024 |
 +--------------------+
+    =   Class suspended due to Milan sir's fever
++---------------------+
+| Tuesday, 26-11-2024 |
++---------------------+
+    =   Class suspended due to Milan sir's fever
 
 +-----------------------+
 | Wednesday, 27-11-2024 |  Day-06
@@ -302,3 +307,17 @@ MILAN DAS                   7978168568  milandas63@gmail.com                mila
                 System.out.println(ff);
             }
         }
+
+
+    =   ASSIGNMENT:
+        Count the number of vowels that exists within a string/text?
+
+    =   ASSIGNMENT-2:
+        Write a program to count the number of occurances of each character in a string?
+        Example:
+            Welcome     C = 1
+                        E = 2
+                        L = 1
+                        M = 1
+                        O = 1
+                        W = 1
