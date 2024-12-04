@@ -654,4 +654,85 @@ MILAN DAS                   7978168568  milandas63@gmail.com                mila
                  72913 = Seven Two Nine One Three
 
     =   INHERITANCE
-                
+
+        Object
+        +- MotilalNehru
+        |  +- JawaharlalNehru
+        |  |  +- IndiraGandhi
+        |  |  |  +- RajeevGandhi
+        |  |  |  +- RahulGandhi
+        |  |  +- SanjayGandhi
+        |  |  |  +- BarunGandhi
+
+
+        class MotilalNehru {
+            void name() {
+                Sysem.out.println("MotilalNehru");
+            }
+        }
+
+        class JawaharlalNehru extends MotilalNehru {
+            void name() {
+                Sysem.out.println("JawaharlalNehru");
+            }
+        }
+
+        class IndiraGandhi extends JawaharlalNehru {
+            void name() {
+                Sysem.out.println("IndiraGandhi");
+            }
+        }
+
+        class RajeevGandhi extends IndiraGandhi {
+            void name() {
+                Sysem.out.println("RajeevGandhi");
+            }
+
+            void name(String x) {               // Overloading of method
+                Sysem.out.println("IndiraGandhi");
+            }
+        }
+
+        class SanjayGandhi extends JawarharlalGandhi {
+            void name() {                       // Overriding of method
+                Sysem.out.println("SanjayGandhi");
+            }
+        }
+
+        class RahulGandhi extends IndiraGandhi {
+        }
+
+        class BarunGandhi extends SanjayGandhi {
+        }
+
+        class Working {
+            public static void main(String[] args) {
+                MotilalNehru m = new MotilalNehru();
+                JawaharlalNehru j = new JawaharlalNehru();
+                IndiraGandhi i = new IndiraGandhi();
+                RajeevGandhi r = new RajeevGandhi();
+                SanjayGandhi s = new SanjayGandhi();
+                RahulGandhi rg = new RahulGandhi();
+                BarunGandhi bg = new BarunGandhi();
+
+                r.name();
+                m.name();
+                s.name();
+                bg.name();
+                i.name();
+                rg.name();
+                j.name();
+            }
+        }
+
+    =   POLYMORPHISM
+        What is Polymorphism?
+        In OOPs, Polymorphism means having same name to different entities.
+        There are two types of Polymorphism:
+        1)  Overloading of methods
+            When more than one method/funciton in the same class has same name
+            with different parameter list, it is overloading of methods.
+        2)  Overriding of methods
+            When a method is redefined in the child that exists in the parent
+            class, that is overriding of methods.
+
