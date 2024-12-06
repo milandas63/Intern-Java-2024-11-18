@@ -943,3 +943,12 @@ MILAN DAS                   7978168568  milan.das@iigvarsity.com            mila
     =   WAP to find the smallest and largest numbers in an array of int numbers?
             int[] nums = {56,110,34,21,345,11,23,55,99,78,83,81,221,198};
 
+    =   Convert a word of alphabets to a box shape?
+            Example: Say the word is INDIA, JUPITER, SUN
+            Convert: I N D I A        J U P I T E R        S U N
+                     N       I        U           E        U   U
+                     D       D        P           T        N U S
+                     I       N        I           I
+                     A I D N I        T           P
+                                      E           U
+                                      R E T I P U J
