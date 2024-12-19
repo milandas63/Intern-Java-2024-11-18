@@ -1290,4 +1290,34 @@ MILAN DAS                   7978168568  milan.das@iigvarsity.com            mila
         Check the validity of age for printing voter-id card:
             {25,33,-55,66,51,0,99,73,77,12,45,15,81,76,18,-11,56,0,33}
 
+    =   What is the work of super keyword?
+        The super keyword calls the matching constructor of the immediate parent
+        class. The super command can be only written with a child class constructor.
 
+    =   ASSIGNMENT:
+        
+        Object
+        +- Throwable
+        |  +- Exception
+        |  |  +- LoginException
+        |  |  |  +- UsernameException
+        |  |  |  |  +- EmptyUsernameException
+        |  |  |  |  +- MinLengthUsernameException
+        |  |  |  |  +- MaxLengthUsernameException
+        |  |  |  |  +- NoAlphabeticCharacterInUsernameException
+        |  |  |  |  +- NoDigitCharacterInUsernameException
+        |  |  |  |  +- NoUppercaseCharacterInUsernameException
+        |  |  |  +- PasswordException
+        |  |  |  |  +- EmptyPasswordException
+        |  |  |  |  +- MinLengthPasswordException
+        |  |  |  |  +- MaxLengthPasswordException
+
+        Take a username and a password from the user and check the validity
+        by matching it with the following users:
+
+            { {"Milan1963","paragon33"},
+              {"Sonali2005","doctor256"},
+              {"Suraj55","helloworld@2024"},
+              {"ZipZip007","Humanbeing"},
+              {"Projectile11","safaire"}
+            }
