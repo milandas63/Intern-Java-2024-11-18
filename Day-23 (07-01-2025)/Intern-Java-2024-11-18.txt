@@ -1595,3 +1595,32 @@ MILAN DAS                   7978168568  milan.das@iigvarsity.com            mila
         1, Milan Das, B K Das, Male, 25-11-1963, PhD, Java Specialist
         2, Suraj Samal, S Samal, Male, 13-03-2005, B Tech, Developer
         3, Sonali Das, S Das, Female, 23-11-2006, B Tech, Developer
+
+    =   Answer the questions given in Test-IIG-002 (07-01-2025)-HTML2.docx
+
+    =   Course covered in Java
+        1.  How to create a class
+        2.  Members of a class
+            a)  Fields
+            b)  Constructors
+            c)  Methods
+        3.  Access specifiers
+            a)  public
+            b)  protected
+            c)  private
+            d)  <undefined>
+        4.  Modifiers
+            a)  final
+            b)  static
+        5.  Exception Handling
+
+
+    =   abstract modifier
+        The abstract modifier is not applicable to a field or constructor.
+        The abstract modifier is only applicable to methods and class
+
+        The abstract modifier allows a method or a class to remain incomplete.
+
+        abstract class Work {
+            public abstract String reverse(String original);
+        }
