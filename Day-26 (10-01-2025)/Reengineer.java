@@ -8,16 +8,16 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 public class Reengineer {
-	private String name = "java.lang.String";
+
 	private String outFile = "String.txt";
 	private StringBuffer buffer;
 	private FileOutputStream ioFile;
 
-	public Reengineer() {
+	public Reengineer(String name) {
 		buffer = new StringBuffer();
 
 		try {
-			ioFile = new FileOutputStream(outFile);
+			ioFile = new FileOutputStream(outFile,true);
 			Class obj = Class.forName(name);
 			Field[] f = obj.getDeclaredFields();
 			Constructor[] c = obj.getDeclaredConstructors();
@@ -51,7 +51,8 @@ public class Reengineer {
 					buffer.append((i+1)+": "+nopackage(m[i].toString())+"\r\n");
 				}
 			}
-			System.out.println(buffer);
+
+			buffer.append("\r\n\r\n\r\n");
 			ioFile.write(buffer.toString().getBytes());
 			ioFile.close();
 		} catch(ClassNotFoundException e) {
@@ -75,16 +76,17 @@ public class Reengineer {
 			case '(': take = true; break;
 			case ')': take = true; break;
 			}
-			
+
 			if(take) {
 				buf.insert(0, c);
 			}
 		}
 		return buf.toString();
 	}
-	
-	public static void main(String[] args) {
-		new Reengineer();
-	}
 
+	public static void main(String[] args) {
+		for(int i=0; i<args.length; i++) {
+			new Reengineer(args[i]);
+		}
+	}
 }
