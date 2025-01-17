@@ -7,7 +7,9 @@ import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Vector;
 
 import javax.swing.ButtonGroup;
@@ -15,13 +17,16 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
 public class StudentInfoSys extends JFrame {
 	private FileOutputStream outFile; 
-	
+
 	private JTextField tfRollno;
 	private JTextField tfName;
 	private JTextField tfFather;
@@ -34,6 +39,29 @@ public class StudentInfoSys extends JFrame {
 	private JButton btnExit;
 	
 	public StudentInfoSys() {
+		try {
+			outFile = new FileOutputStream("studentInfoSys.csv");
+		} catch(FileNotFoundException e) {
+		}
+		
+		JMenuBar menubar = new JMenuBar();
+		this.setJMenuBar(menubar);
+		JMenu mnuAction = new JMenu("Action");
+		menubar.add(mnuAction);
+			JMenuItem itmAdd = new JMenuItem("Add");
+			JMenuItem itmEdit = new JMenuItem("Edit");
+			JMenuItem itmDele = new JMenuItem("Delete");
+			mnuAction.add(itmAdd);
+			mnuAction.add(itmEdit);
+			mnuAction.add(itmDele);
+
+		JMenu mnuExit = new JMenu("Exit");
+		menubar.add(mnuExit);
+			JMenuItem itmExit = new JMenuItem("Exit");
+			JMenuItem itmClear = new JMenuItem("Clear");
+			mnuExit.add(itmExit);
+			mnuExit.add(itmClear);
+
 		this.setLayout(new BorderLayout());
 		
 		JLabel lblTitle = new JLabel("STUDENT INFORMATION SYSTEM", JLabel.CENTER);
@@ -132,10 +160,18 @@ public class StudentInfoSys extends JFrame {
 					line.append(qualif);
 					line.append("\r\n");
 					System.out.println(line.toString());
+					try {
+						outFile.write(line.toString().getBytes());
+					} catch(IOException e) {
+					}
 				}
 			});
 			btnExit.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent ae) {
+					try {
+						outFile.close();
+					} catch(IOException e) {
+					}
 					System.exit(0);
 				}
 			});
