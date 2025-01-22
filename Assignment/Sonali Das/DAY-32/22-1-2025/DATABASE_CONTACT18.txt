@@ -1,0 +1,50 @@
+DROP DATABASE IF EXISTS contact18;
+CREATE DATABASE IF NOT EXISTS contact18;
+USE contact18;
+
+#Relation
+CREATE TABLE relation(
+     rel_id              INT(6)                       NOT NULL  AUTO_INCREMENT,
+     rel_desc          VARCHAR(20)          NOT NULL,
+      rel_abbr          VARCHAR(10),   
+      PRIMARY KEY (rel_id)    
+);
+INSERT INTO relation VALUES
+          (1, "Family", NULL),
+          (2, "Cousins", NULL),
+          (3, "Teacher", NULL),
+          (4, "School Friends", NULL),
+          (5 "Professional Friends", NULL);
+
+# Location
+CREATE TABLE location(
+      loc_id              INT(6)                       NOT NULL  AUTO_INCREMENT,
+      loc_desc          VARCHAR(20)          NOT NULL,
+      loc_abbr          VARCHAR(10),   
+      PRIMARY KEY (loc_id)    
+);
+INSERT INTO location VALUES
+              (1,  "Bhubneswar", BBSR),
+              (2, "Cuttack", CTC),
+              (3,  "Hyderabad", HYD),
+              (4,  "Bangalore", BLR),
+              (5,   "Delhi", DL);
+
+#Contact
+CREAT TABLE contact(
+     con_id              INT(6)                       NOT NULL  AUTO_INCREMENT,
+      con_name          VARCHAR(30)          NOT NULL,
+      con_email          VARCHAR(20),  
+       con_mobile          VARCHAR(10),
+        loc_id             INT(6)                     NOT NULL REFERENCES location(loc_id),
+        rel_id             INT(6)                     NOT NULL REFERENCES relation(rel_id),
+      PRIMARY KEY (con_id)    
+
+); 
+INSERT INTO contact VALUES
+             (1,  "Sonali",    "sonali@gmail.com",   "801260656",  1, 2),
+              (2, " Subasis", "subasis@gmail.com", "1342780576", 1,5),
+              (3,  "Suraj",      "suraj@gmail.com",     "1342654780", 1,5),
+              (4,  "Rashmi", "rashmi@gmail.com", "2347419802", 2,5),
+              (5,   "Milan",    "milan@gmail.com",   "3246589064",1,3);
+ 
