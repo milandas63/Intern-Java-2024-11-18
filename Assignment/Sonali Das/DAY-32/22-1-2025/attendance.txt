@@ -1,0 +1,107 @@
+DROP DATABASE IF EXISTS attendance18;
+CREATE DATABASE IF NOT EXISTS attendance18;
+USE attendance18;
+
+#Class
+CREATE TABLE class(
+     cla_id              INT(6)                       NOT NULL  AUTO_INCREMENT,
+     cla_desc          VARCHAR(20)          NOT NULL,
+      cla_abbr          VARCHAR(10),   
+      PRIMARY KEY (cla_id)    
+);
+INSERT INTO class VALUES
+          (1, "b.sc",     NULL),
+          (2, "b.tech", NULL),
+          (3, "m.tech",NULL),
+          (4, "m.c.a",   NULL),
+          (5,  "mba",    NULL);
+
+#Section
+CREATE TABLE section(
+      sec_id              INT(6)                       NOT NULL  AUTO_INCREMENT,
+      sec_desc          VARCHAR(20)          NOT NULL,
+      sec_abbr          VARCHAR(10),         NOT NULL,
+      PRIMARY KEY (sec_id)    
+);
+INSERT INTO section VALUES
+              (1,  "Morning",NULL),
+              (2,  "Day", NULL),
+              (3,  "Mid-day", NULL),
+              (4,  "Evening", NULL),
+              (5,   "Night", NULL),
+
+# BRANCH
+CREAT TABLE branch(
+    br_id              INT(6)                       NOT NULL  AUTO_INCREMENT,
+    br_desc          VARCHAR(20)          NOT NULL,
+    br_abbr          VARCHAR(10),         NOT NULL,
+      PRIMARY KEY (br_id)    
+); 
+INSERT INTO branch VALUES
+             (1,  "ece",  NULL),
+              (2,  "cs",   NULL),
+              (3,  "eee", NULL),
+              (4,  "civil",NULL),
+              (5,  "mech",NULL);
+
+# Subject
+CREAT TABLE subject(
+   sub_id              INT(6)                       NOT NULL  AUTO_INCREMENT,
+   sub_desc         VARCHAR(20),          NOT NULL,
+    sub_abbr        VARCHAR(10),          NOT NULL,
+     PRIMARY KEY (br_id)    
+
+); 
+INSERT INTO subject VALUES
+             (1,  "maths",                NULL ),
+              (2, " control system",NULL ),
+              (3, "Electromagnetic",NULL),
+              (4,  "Data structure",  NULL),    
+              (5,   "Algebra",             NULL);
+
+
+# STUDENT
+CREAT TABLE student(
+    stu_id              INT(6)                       NOT NULL  AUTO_INCREMENT,
+       stu_name          VARCHAR(30)       NOT NULL,
+       stu_class         VARCHAR(15),          NOT NULL,
+       stu_section          VARCHAR(20),
+       stu_branch       VARCHAR(10),
+      PRIMARY KEY ( stu_id)    
+); 
+INSERT INTO studentVALUES
+             (1,  "Sonali",          "2",   "1",  "3"),
+              (2, " Subasis",       "1",   "2",  "2"),
+              (3,  "Suraj",           "2",   "2",  "2"),
+              (4,  "Rashmi",       "3",   "4",  "1"),
+              (5,   "Milan",          "1",   "3",  "2");
+ 
+# Attendence
+CREAT TABLE attendence(
+attn_id             INT(6)                  NOT NULL AUTO_INCREMENT,
+stu_name       VARCHAR(30)      NOT NULL,
+cla_id              VARCHAR(15)       NOT NULL,
+date                 VARCHAR(20)      NOT NULL,
+sec_id             VARCHAR(15)        NOT NULL,
+sub_id            VARCHAR(15)       NOT NULL,
+br_id               VARCHAR(10)      NOT NULL,
+sub_id    INT(6)           NOT NULL REFERENCES subject(sub_id),
+br_id       INT(6)            NOT NULL REFERENCES branh(br_id),
+PRIMARY KEY (attn_id)
+);
+INSERT INTO attendenceVALUES
+             (1,  "p",   "Sonali",      "22/1/25",     "2","1", "1","3"),
+              (2, "a",   " Subasis",  "22/1/25",      "1","2","5","2"),
+              (3, "p",   "Suraj",       "22/1/25",      "2","2","3","2"),
+              (4, "a",   "Rashmi",   "22/1/25",      "3","4","2","1"),
+              (5, "p",   "Milan",      "22/1/25",      "1","3","4","2");
+
+# View
+SELECT * FROM attendance;
+
+SELECT a.attn_id, s.stu_name, c.cla_id , s.sec_id, s.sub_id, b.br_id, s.sub_desc   FROM attendence AS a
+LEFT JOIN subject AS s ON a.sub_id=s.sub_id
+LEFT JOIN branch AS b ON a.br_id= b.br_id;
+
+
+ 
