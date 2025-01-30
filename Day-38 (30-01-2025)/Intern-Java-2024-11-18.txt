@@ -2180,4 +2180,12 @@ MILAN DAS                   7978168568  milan.das@iigvarsity.com            mila
                 </body>
             </html>
 
+    =   Write as many JavaScript programs from the figures and pattern given in the
+        Question.txt.
+
+        1.  Pyramid: 4 programs
+        2.  Prime Number Generator
+        3.  Multiplication Tables
+
+
 
