@@ -1,0 +1,159 @@
+#	GENERAL FEATURES OF THE TEST-ASSESSMENT MODULE
+#
+#	1.  Every question must be tagged with a category field, i.e. academic specialization of the student.
+#           TABLE-NAME: subject_categpry
+#           Example:
+#           i.       HTML
+#           ii.      CSS
+#           iii.     JavaScript
+#           iv.      Core Java
+#           v.       Advanced Java
+#           vi.      Angular
+#           vii.     Spring
+#           viii.    Spring Boot
+#           ix.      GitHub
+#
+#       2.  Questions must have multiple formats:
+#           TABLE-NAME: format_type
+#           i.       Multiple Choice
+#           ii.      True/False
+#           iii.     Fill-in-the-Blank
+#           iv.      Fill-in-Multiple-Blanks
+#           v.       Multiple Answers
+#           vi.      Multiple Drop-down (can be used for Likert scale)
+#           vii.     Matching
+#           viii.    Numerical Answer
+#           ix.      Formula (simple formula and single variable)
+#           x.       Essay or Descriptive Answer
+#           xi.      File Upload
+#
+#       3.  A different form must be provided to enter the question and associated answer choices, if any.
+#
+#       4.  Question difficulty level specification
+#           TABLE-NAME: difficulty_level
+#           i.       Easy
+#           ii.      Medium
+#           iii.     Difficult
+#           iv.      Very difficult
+#
+#       5.  Every question will have fixed-mark and marking facilities defined:
+#           TABLE-NAME: marking_method
+#           i.       Minus marking
+#           ii.      Full mark
+#           iii.     Bonus mark
+#
+#       6.  Every question must be associated with answers/multiple answers/patterns etc.
+#
+#       7.  The assessment test questions should be generated on parameters set by the evaluator
+#           i.     Number of questions
+#           ii.     Random picking of questions (yes/no)
+#           iii.     Randomize sequence of answers displayed
+#           iv.     Timer setting (time for each question)
+#           v.     Timer display (yes/no)
+#           vi.     Generate questions from all categories (yes/no)
+#           vii.     Go back to edit the previous question (yes/no)
+#           viii.     Manual selection of questions
+#
+#       8.  Options to print the question-sheet/answer-sheet of the student after the test or in future.
+#
+#       9.  Result sheet with the list of students in the batch for the notice board.
+
+
+
+# subject
+
+
+
+TABLE-NAME: subject_categpry
+CREATE TABLE subject_category(
+    cat_id		 INT(6)			NOT NULL AUTO_INCREMENT,
+    cat_desc		 VARCHAR(50)		NOT NULL UNIQUE,
+    cat_abbr             VARCHAR(10)		DEFAULT NULL,
+    PRIMARY KEY(cat_id)
+);
+INSERT INTO subject_category VALUES
+    (1,   "HTML",          "HTM" ),
+    (2,   "CSS",           "CSS" ),
+    (3,   "JavaScript",    "JAV" ),
+    (4,   "Core Java",     "COR" ),
+    (5,   "Advanced Java", "ADV" ),
+    (6,   "Angular",       "ANG" ),
+    (7,   "Spring",        "SPR" ),
+    (8,   "Spring Boot",   "SPR" ),
+    (9,   "GitHub",        "GIT" );
+
+
+
+#format
+
+
+
+TABLE-NAME : formate_type
+CREATE TABLE formate_type(
+   typ_id               INT(6)                 NOT NULL AUTO_INCREMENT,
+   typ_desc             VARCHAR(50)            NOT NULL UNIQUE,
+   typ_abbr             VARCHAR(10)            DEFAULT NULL,
+   PRIMARY KEY(typ_id)
+);
+
+INSERT INTO formate_type VALUES
+    (1,  "Multiple Choice",              "MC"  ),
+    (2,  "True/False",                   "TF"  ),
+    (3,  "Fill-in-the-Blanks",           "FIB" ),
+    (4,  "Fill-in-Multiple-Blanks",      "FIMB"),
+    (5,  "Muiltiple Answers",            "MA"  ),
+    (6,  "Multiple Drop-down",           "MDD" ),
+    (7,  "Matching",                     "MAT" ),
+    (8,  "Numerical Answer",             "NA"  ),  
+    (9,  "Formula",                      "FOR" ),
+    (10,  "Essay or Descriptive Answer", "EDA" ),
+    (11, "File Upload",                  "FU"  );
+
+
+
+#level
+
+
+TABLE_NAME : difficult_level
+CREATE TABLE difficult_level(
+  dif_id                 INT(6)                 NOT NULL AUTO_INCREMENT,          
+  dif_desc               VARCHAR(40)            NOT NULL UNIQUE,
+  dif_abbr               VARCHAR(10)            DEFAULT NULL,
+PRIMARY KEY(dif_id)
+);
+    
+INSERT INTO difficult_level VALUES
+    (1,   "Easy",            "EAS" ),
+    (2,   "Medium",          "MED" ),
+    (3,   "Difficult",       "DIF" ),
+    (4,   "Very difficult",  "VD"  );
+
+
+
+#marking
+
+
+TABLE_NAME : marking_method
+CREATE TABLE marking_method(
+  mark_id                INT(6)                NOT NULL AUTO_INCREMENT,           
+  mark_desc              VARCHAR(40)           NOT NULL UNIQUE,
+  mark_abbr              VARCHAR(10)           DEFAULT NULL,
+);
+INSERT INTO marking_method VALUES
+    (1, "Minus marking",  "MIM" ),
+    (2, "Full mark",      "FM"  ),
+    (3, "Bonus mark",     "BM"  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
