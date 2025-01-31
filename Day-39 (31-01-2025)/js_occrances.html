@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            let text = "I am a Java Coder";
+            let count = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+            let each;
+            for(let i=0; i<text.length; i++) {
+                each = text.charCodeAt(i);
+                if(each>=65 && each<=90) {
+                    count[each-65]++;
+                } else if(each>=97 && each<=122) {
+                    count[each-97]++;
+                }
+            }
+
+            for(let i=0; i<count.length; i++) {
+                if(count[i]>0) {
+                    document.writeln(String.fromCharCode(i+65)+" = "+count[i]+"<br>");
+                }
+            }
+        </script>
+    </body>
+</html>
