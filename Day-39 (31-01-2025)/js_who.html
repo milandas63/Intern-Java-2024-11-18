@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function greet() {
+                var name = document.getElementById("name").value;
+                var father = document.getElementById("father").value;
+                //alert("Hello "+name+"\r\nFather: "+father);
+                var greet = document.getElementById("greet");
+                var dad = document.getElementById("dad");
+                greet.innerHTML = name;
+                dad.innerHTML = father;
+
+            }
+        </script>
+    </head>
+    <body>
+        <label>What is your name? </label>
+        <input type="text" id="name">
+        <br>
+        <label>What is your father's name: </label>
+        <input type="text" id="father">
+        <br><br>
+        <label id="greet"></label><br>
+        <label id="dad"></label>
+        <br><br>
+        <button onclick="greet();">Submit</button>
+    </body>
+</html>
