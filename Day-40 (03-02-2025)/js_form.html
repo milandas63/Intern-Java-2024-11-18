@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Student Information System</title>
+        <script>
+            function validate() {
+                // Name validation
+                let name = document.getElementById("name").value;
+                let each;
+                for(let i=0; i<name.length; i++) {
+                    each = name.charCodeAt(i);
+                    if(!((each>=65 && each<=90) || (each>=97 && each<=122) || each==32)) {
+                        alert("Invalid Character in Name");
+                        break;
+                    }
+                }
+
+                // Father validation
+
+
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Student Information System</h1>
+        <form action="" onsubmit="return validate();">
+        <table>
+            <tr>
+                <td>Candidate's Name: </td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Father's Name: </td>
+                <td><input type="text" id="father"></td>
+            </tr>
+            <tr>
+                <td><label for="">Date of Birth: </label></td>
+                <td><input type="date" id="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="">Mobile No.: </label></td>
+                <td><input type="text" id="mobile"></td>
+            </tr>
+        </table>
+        <br><br>
+        <input type="submit">
+        </form>
+    </body>
+</html>
