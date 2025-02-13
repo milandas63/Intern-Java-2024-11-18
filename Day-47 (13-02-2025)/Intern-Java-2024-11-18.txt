@@ -1,0 +1,2274 @@
+Start Date: 18-11-2024
+Time: Monday to Friday (10:00 am-12:00 am)
+Course: JAVA FULL-STACK
+Whatsapp group: IIG
+GitHub-ID: https://github.com/milandas63/Intern-Java-2024-11-18
+Wifi Password: #A1B2C3E5D4#
+
+Participants:
+MILAN DAS                   7978168568  milan.das@iigvarsity.com            milandas63
+1.  Sonali Das              8018260656  sonali273das@gmail.com              Sonalidas28
+2.  Suraj Samal             9337751724  surajsamal514@gmail.com             suraj51444
+3.  Rashmi Pradhan          6372976078  rashmiranjan6372@gmail.com          Rashmi-Ranjan-6372
+
+
++--------------------+
+| Monday, 18-11-2024 |  Day-01
++--------------------+
+    =   The for loop:
+
+            for([intiallizer] ; [condition] ; [increment/decrement]) [{]
+                ...
+            [}]
+
+            for( ; ; ) {}
+
+    =   How many keywords are there in Java?
+            LIST OF RESERVE WORDS/KEY WORDS IN JAVA (53 words)
+            abstract    continue    for         new         switch
+            assert***   default     goto*       package     synchronized
+            boolean     do          if          private     this
+            break       double      implements  protected   throw
+            byte        else        import      public      throws
+            case        enum****    instanceof  return      transient
+            catch       extends     int         short       try
+            char        final       interface   static      void
+            class       finally     long        strictfp**  volatile
+            const*      float       native      super       while
+            null        true        false
+
+            *       not used
+            **      added in 1.2
+            ***     added in 1.4
+            ****    added in 5.0
+
++---------------------+
+| Tuesday, 19-11-2024 |  Day-02
++---------------------+
+    =   Write a program to draw a triangle of palindrome numbers?
+
+    =   Write a program to print all odd numbers between 25 to 45.
+
+    =   Write a program to draw the following pattern:
+
+            123456789
+            987654321
+            998877665544332211
+            321654987
+
+
++-----------------------+
+| Wednesday, 20-11-2024 |  Day-03
++-----------------------+
+    =   Write a program to print the following series:
+            Series-1: 1 2 4 7 11 16 21 .....
+            Series-2: 1 3 5 11 21 ......        next number is ((previous*2+1), ((previous*2-1),
+
+    =   What is a class?
+        A class is a wrapper around the program. A class protects the programs from
+        infiltrators. The concept of class is taken from real life. Class is reuseable.
+        A class can be tranformed to an object. Several object may be assembled to
+        become another bigger object. Classes are assembled to bcome another object.
+
+    =   What is difference between a class and an object?
+
+        Primary     s1   s2  s3        c1  c2        math      <--- object
+                     \   |   /         |   /           |
+            ----------\--|--/----------|--/------------|------ instanciation
+                       \ | /           | /             |
+        Secondary       \|/            |/              |
+                      String         class           Math      <--- class
+
+
+    =   To create a class, the class key word is used. The class keyword is followed by
+        a className. The className is an user identifier. The rules for creating the
+        user identifier are as follows:
+        1.  A class name should start with an uppercase alphabetic character or underscore
+            or dollar characters
+        2.  It can contain a-z, A-Z, 0-9, _, $ characters only
+        3.  Their is no limit for the length of the name
+
+            SumOfAllNumbers         right
+            Sum_Of_All_Numbers      right
+            24_praganas             wrong
+            $hand                   right
+            34street                wrong
+
+    =   Which places are used to define user-identifiers:
+            1.  class name
+            2.  variable name
+            3.  function name
+            4.  package name
+
+        Other than the class name, the identifiers should have lowercase alphabetic
+        characters.
+
+    =   Java is a highly typed language. Before naming a variable, the data type of the
+        variable must be defined. There are two cateogies of data types used in Java:
+            1.  primitive data type
+                There are 8 primitive data types:
+                    TYPE        KIND            AUTO-INIT  RANGE                       WRAPPER-CLASSES
+                ----------------------------------------------------------------------
+                1.  byte        Integer         0          -128 to +127                java.lang.Byte
+                2.  short       Integer         0          -32768 to 32767             java.lang.Short
+                3.  int*        Integer         0          -2147483648 to 2147483647   java.lang.Integer
+                4.  long        Integer         0          -9223372036854775808 to     java.lang.Long
+                                                           +9223372036854775807
+                5.  float       Floating Point  0.0        32 bits                     java.lang.Float
+                6.  double*     Floating Point  0.0        64 bits                     java.lang.Double
+                7.  char        Unicode         \0         16 bit                      java.lang.Character
+                8.  boolean     True/False      false      1 bit                       java.lang.Boolean
+            2.  reference data type
+                Rest every thing is reference data type.
+                Global variables are automatically initialized with null.
+
+
+    =   ASSIGNMENT:
+        Write a program to print all PRIME numbers between 1000 and 3000?
+
+
++----------------------+
+| Thursday, 21-11-2024 |  Day-04
++----------------------+
+     2 x  1 =   2   3 x  1 =   3  4 x 1 = 4  5 x 1 = 5  6 x 1 = 6  7 x 1 = 7  8 x 1 = 8  9 x 1 = 9  10 x 1 = 10
+     2 x  2 =   4   3 x  2 =   6  4 x 2 = 8  5 x 2 = 10  6 x 2 = 12  7 x 2 = 14  8 x 2 = 16  9 x 2 = 18  10 x 2 = 20
+     2 x  3 =   6   3 x  3 =   9  4 x 3 = 12  5 x 3 = 15  6 x 3 = 18  7 x 3 = 21  8 x 3 = 24  9 x 3 = 27  10 x 3 = 30
+     2 x  4 =   8   3 x  4 =  12  4 x 4 = 16  5 x 4 = 20  6 x 4 = 24  7 x 4 = 28  8 x 4 = 32  9 x 4 = 36  10 x 4 = 40
+     2 x  5 =  10   3 x  5 =  15  4 x 5 = 20  5 x 5 = 25  6 x 5 = 30  7 x 5 = 35  8 x 5 = 40  9 x 5 = 45  10 x 5 = 50
+     2 x  6 =  12   3 x  6 =  18  4 x 6 = 24  5 x 6 = 30  6 x 6 = 36  7 x 6 = 42  8 x 6 = 48  9 x 6 = 54  10 x 6 = 60
+     2 x  7 =  14   3 x  7 =  21  4 x 7 = 28  5 x 7 = 35  6 x 7 = 42  7 x 7 = 49  8 x 7 = 56  9 x 7 = 63  10 x 7 = 70
+     2 x  8 =  16   3 x  8 =  24  4 x 8 = 32  5 x 8 = 40  6 x 8 = 48  7 x 8 = 56  8 x 8 = 64  9 x 8 = 72  10 x 8 = 80
+     2 x  9 =  18   3 x  9 =  27  4 x 9 = 36  5 x 9 = 45  6 x 9 = 54  7 x 9 = 63  8 x 9 = 72  9 x 9 = 81  10 x 9 = 90
+     2 x 10 =  20   3 x 10 =  30  4 x 10 = 40  5 x 10 = 50  6 x 10 = 60  7 x 10 = 70  8 x 10 = 80  9 x 10 = 90  10 x 10 = 100
+
+
++--------------------+
+| Friday, 22-11-2024 |  Day-05
++--------------------+
+    1 byte = 8 bit = 2^8 = 256 combination
+        00000000
+        00000001
+        00000010
+        00000011
+
+    Requirement was only less than 128 character. So, 7 bits were used to keep the
+    data and the last bit was used for parity check. This type of data representation
+    is known as ASCII (American Standard Code for Information Interchange).
+
+    When requirement for adding other languages in the computer system croped, the
+    byte size was incresed to 16 bit = 2^16 combinations = 32536 combinations.
+    This type of data representation is known as UNICODE (Universal Code).
+
+    Reserve discussed:
+        for,    if,         else,   byte,   short,  int,    long,   float,  double,
+        char,   boolean,    class
+
+    The first requirement of Java is to learn, how to create a class.
+    A class has a specific syntax:
+        [access-specifier]
+        [modifier]
+        class <className>
+        [extends <parentClass>]
+        [implements <interfaceName,....]
+        {}
+
+
+    [access-specifier]
+        There are 3 keywords to define the access-specifier:
+            1.  public
+            2.  protected
+            3.  private
+
+    =   How many ways are there to access a class?
+        There are 2 ways:
+            1.  By object reference
+            2.  By inheritance
+
+        class Math {
+            public int add(int x, int y) {
+                return x+y;
+            }
+            public int subtract(int x, int y) {
+                return x-y;
+            }
+            public double multiply(int x, int y) {
+                return x*y;
+            }
+            public double divide(int x, int y) {
+                return x/y;
+            }
+        }
+
+        //  Access to a class by object reference
+        class Working {
+            public static void main(String[] args) {
+                Math math = new Math();
+                System.out.println(math.divide(36,5));
+            }
+        }
+
+
+        //  Access to a class by inheritance
+        class Working extends Math {
+            Math() {
+                System.out.println(divide(36,5));
+            }
+
+            public static void main(String[] args) {
+                new Math();
+            }
+        }
+
++--------------------+
+| Monday, 25-11-2024 |
++--------------------+
+    =   Class suspended due to Milan sir's fever
++---------------------+
+| Tuesday, 26-11-2024 |
++---------------------+
+    =   Class suspended due to Milan sir's fever
+
++-----------------------+
+| Wednesday, 27-11-2024 |  Day-06
++-----------------------+
+    =   Data Types
+
+        25.50;
+
+        double amount = 25.50;
+        float money = 25.50F;
+
+        byte[] ascii = {65,66,67,68,69,70,71,72,73,74,75};
+        String name = new String(ascii);
+        System.out.println(name);               //  ABCDEFGHIJK
+
+        class SomeName extends Frame {
+        }
+
+        Object
+        +-  Component
+        |   +-  Container
+        |   |   +-  Window
+        |   |   |   +-  Frame
+        |   |   |   |   +-  SomeName
+
+        class Important {
+            // Field/Variable memebers
+            private String name;
+            private int age;
+            private char gender;
+
+            // Constructor members
+            public Important() {
+            }
+
+            public Important(String n, int a, char g) {
+                name = n;
+                age = a;
+                gender = g;
+            }
+
+            // Method/Function members
+            public String getName() {
+                return name;
+            }
+            public void setName(String n) {
+                name = n;
+            }
+
+            public String getAge() {
+                return age;
+            }
+            public void setAge(String a) {
+                age = a;
+            }
+
+            public String getGender() {
+                return gender;
+            }
+            public void setGender(String g) {
+                gender = g;
+            }
+        }
+
+        class AnyName extends Important {
+            public String getName() {
+                return name;
+            }
+        }
+
+        Important imp = new Important("Milan",62,'M');
+        imp.getName();
+
+    =   In the whole world of Java, only one class is there whose object may
+        be defined in descrit format. That is String class. Anything that is
+        embedded within double quote is treated as String object.
+
+        class Example {
+            public static void main(String args[]) {
+                String title = new String("Hello World");
+                Frame f = new Frame(title);
+                Frame ff = new Frame("Java Batch-11");
+                System.out.println(f);
+                System.out.println(ff);
+            }
+        }
+
+    =   ASSIGNMENT:
+        Count the number of vowels that exists within a string/text?
+
+    =   ASSIGNMENT-2:
+        Write a program to count the number of occurances of each character in a string?
+        Example:
+            Welcome     C = 1
+                        E = 2
+                        L = 1
+                        M = 1
+                        O = 1
+                        W = 1
+
+
++----------------------+
+| Thursday, 28-11-2024 |  Day-07
++----------------------+
+    =   Write a program to reverse the content of a string?
+        Original:    Welcome
+        Reverse:     emocleW
+
+        Original:    Kingdom of God
+        Reverse:     doG fo modgniK
+
+    =   WAP to reverse each word within a given string?
+        Original: Quick Brown Fox Jumps Over The Lazy Dog
+        Reverse1: kciuQ nworB xoF spmuJ revO ehT yzaL goD
+
+    =   What is a constructor?
+        >   A constructor is used to transform a class into an object
+        >   A class is transformed to an object with the help of new operator.
+            The new operator calls the constructor of the class.
+                String str = new String();
+                String barr = new String(new byte[] {65,66,67,68,69,70});
+                String carr = new String(new char[] {'M','i','l','a','n','d'});
+                String sarr = new String(new String() {"F","A","L","S","E"});        // Error
+        >   A constructor name must be same with the class name.
+        >   There may be more than one constructor in a class. All constructors in
+            a class must have different parameters.
+
+    =   What is computer programming language?
+        A programming language is a medium of communication with the computer.
+        The computer is fed with a set of instructions in form of notation. The instruction
+        is further converted to machine language and the machine executes accordingly.
+
+    =   What is a computer program paradigm?
+        A computer language paradigm is a set of concepts and practices that
+        define how a program should be written and organized. Each paradigm
+        has its own unique features and programming models that help developers
+        code efficiently.
+
+    =   There are different paradigms of computer languages:
+        >   Procedure Oriented Language
+        >   Object Oriented Lanaguage
+
+    =   What is OOPs?
+        OOPs stands for Object Oriented Programming?
+        In OOPs language, there are certain features to tbe followed:
+            1.  Encapsulation and Abstraction
+                When the data and the programming code are kept within a single
+                unit, it is known as encapsulation.
+            2.  Inheritance
+            3.  Polymorphism
+
+
+        ENCAPSULATION:
+            class Galaxy {
+                String name;
+                long distance;
+                long width;
+                long height;
+
+                public Galaxy() {
+                    name = "Milkyway";
+                    distance = 0;
+                    width = 6754445566L;
+                    height = 33994959948483L;
+                }
+                public Galaxy(String name, long distance, long width, long height) {
+                    this.name = name;
+                    this.distance = distance;
+                    this.width = width;
+                    this.height = height;
+                }
+
+                public double area() {
+                    return width*height;
+                }
+            }
+
+            Galaxy gal = new Galaxy();
+            Galaxy gal2 = new Galaxy("Armageddon",4454334554L, 3344323344544L, 3300495958L);
+
+    =   ASSIGNMENT:
+        Write a program to convert a set of lowercase characters to uppercase without
+        using any functions:
+        Example:
+            google meet
+            GOOGLE MEET
+
+
++--------------------+
+| Friday, 29-11-2024 |  Day-08
++--------------------+
+    =   25      19
+          10      16
+
+    =   1 byte = 8 bit = 2^8 = 256 combination
+
+
+    =   A   B   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z
+        65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90
+
+        a   b   c   d   e   f   g   h   i   j   k   l   m   n   o   p   q   r   s   t   u   v   w   x   y   z
+        97  98  99  100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122
+
+    =   ASSIGNMENT:
+        Flip/Invert/Toggle the case of all characters in a given String?
+        Example:
+            Original:   Quick Brown Fox Jumps Over The Lazy Dog
+            Invert:     qUICK bROWN fOX jUMPS oVER tHE lAZY dOG
+
+    =   ASSIGNMENT:
+        Write a function that takes a list of strings and prints them, one per line, in
+        a rectangular frame.
+            String sentence = "Hello World in a frame";
+                *********
+                * Hello *
+                * World *
+                * in    *
+                * a     *
+                * frame *
+                *********
+
+            String text = "An excellent evening to dance and enjoy";
+                *************
+                * An        *
+                * excellent *
+                * eveining  *
+                * to        *
+                * dance     *
+                * and       *
+                * enjoy     *
+                *************
+
+    =   ASSIGNMENT-Home:
+        Write a program to convert all digits in a number to words?
+        Example: 12345 = One Two Three Four Five
+                 03786 = Zero Three Seven Eight Six
+                 72913 = Seven Two Nine One Three
+
+
++--------------------+
+| Monday, 02-12-2024 |  Day-09
++--------------------+
+    =   WAP to print the sum of all ascii values in a word?
+            Milan   M   i   l   a   n
+                    77  105 108 97  110 = 77+105+108+97+110 = 497
+            Suraj
+            Sonali
+
+        String name = "Sonali";
+
+    =   What are the features of OOPs?
+        1.  Encapsulation
+            The data and the code are kept in one unit that is called a class.
+            a)  In encapsulation, there is something called Abstraction
+                Abstraction is a technique to hide the data from users.
+
+            class College {
+                private String name;
+                private int year_of_foundation;
+                private String location;
+
+                public String getName() {
+                    return name;
+                }
+                public void setName(String name) {
+                    this.name = name;
+                }
+
+            }
+
+            class Working extends College {
+                public Working() {
+                    System.out.println(name);         // Not allowed
+                }
+
+                public static void main(String[] args) {
+                    new Working();
+                }
+            }
+
+    =   INHERITANCE
+        Classes can inherit other class. In Java, one class can inherit
+        only another class. Multiple inheritance is restricted in Java.
+        Java allows multi-level inheritance.
+
+        Multiple inheritance
+
+         Father                              Mother
+            |                                   |
+            +----------------+------------------+
+                             |
+                            Son
+
+        Single inheritance
+
+        +-  Object
+        |   Great-Grand-Father
+        |   +-  Grand-Father
+        |   |   +-  Father
+        |   |   |   +-  Son
+
+
+    =   Example:
+
+
+        class Earth {
+            public long population() {
+                return 650000000L;
+            }
+        }
+
+        class Asia extends Earth {
+            public double area() {
+                return 754884733744.35;
+            }
+        }
+
+        class India extends Asia {
+        }
+
+        class Odisha extends India {
+        }
+
+        class Bhubaneswar extends Odisha {
+        }
+
+        Bhubaneswar  b = new Bhubaneswar();
+        System.out.println(b.population());
+        650000000
+
+        System.out.println(b.area());
+        754884733744.35
+
+        +-  Object
+        |   +-  Earth
+        |   |   +-  Asia
+        |   |   |   +-  India
+        |   |   |   |   +-  Odisha
+        |   |   |   |   |   +-  Bhubaneswar
+
+    =   ASSIGNMENT:
+        WAP to swap the content of 2 variables?
+            int x = 10;
+            int y = 15;
+            System.out.println(x+" "+y);
+            10 15
+
+            // swap
+
+            // int temp = y;
+            // y = x;
+            // x = temp;
+
+            x = x+y;
+            y = x-y;
+            x = x-y;
+
+            System.out.println(x+" "+y);
+            15 10
+
+
+=   ASSIGNMENT:
+    Question 11 (a-n) all programs must be complete by end of this week (Friday).
+
+
++---------------------+
+| Tuesday, 03-12-2024 |  Day-10
++---------------------+
+    =   ASSIGNMENT:
+    =   Classname: Encoder, Decoder
+        Write a program to encode a text message by adding the position
+        number of every word to the ascii value of the capital letter
+        character of all characters in the text. All encoded text must
+        be displayed in lower case.
+    =   Actual text:    Attack white house
+        Encoded text:   auvdip wikwi hpwvi
+
+
+    =   Suppose there is a string in the name hallucination
+        For cutting purpose, String class provides substring method.
+
+        String word = "hallucination";
+        String name = "hallucination";
+
+                  word
+        +----------------------+----------------------+
+        |     hallucination    |                      |
+        +----------------------+                      |
+        |                                             |
+        |                                             |
+        |                                             |
+        +----------------------+                      |
+        |   hallucination      |                      |
+ Sting  +----------------------+                      |
+  Pool  |                      |                      |
+        +----------------------+                      |
+        |                      |                      |
+        +----------------------+                      |
+        |                      |                      |
+        +----------------------+----------------------+
+
+        word = sp[0]
+        name = sp[0]
+
+    =   StringBuffer
+        StringBuffer classmate = new StringBuffer("Sonali Das");
+        System.out.println(classmate);
+        classmate.replace(7,10,"David");
+        System.out.println(classmate);
+
+    =   StringBuffer text = new StringBuffer("Milan Das");
+        text.append(",").append("Sonali Das"),append(",").append("Suraj Samal");
+        System.out.println(text);
+
+
++-----------------------+
+| Wednesday, 04-12-2024 |  Day-11
++-----------------------+
+    =   ASSIGNMENT-1:
+        Complete 10 occurances in the series:
+        a)  1,  2,  6,  24,  120, ......
+        b)  1,  3,  6,  18,   36, ......
+
+    =   ASSIGNMENT-2:
+        Write a program to convert all digits in a number to words?
+        Example: 12345 = One Two Three Four Five
+                 03786 = Zero Three Seven Eight Six
+                 72913 = Seven Two Nine One Three
+
+    =   INHERITANCE
+
+        Object
+        +- MotilalNehru
+        |  +- JawaharlalNehru
+        |  |  +- IndiraGandhi
+        |  |  |  +- RajeevGandhi
+        |  |  |  +- RahulGandhi
+        |  |  +- SanjayGandhi
+        |  |  |  +- BarunGandhi
+
+
+        class MotilalNehru {
+            void name() {
+                Sysem.out.println("MotilalNehru");
+            }
+        }
+
+        class JawaharlalNehru extends MotilalNehru {
+            void name() {
+                Sysem.out.println("JawaharlalNehru");
+            }
+        }
+
+        class IndiraGandhi extends JawaharlalNehru {
+            void name() {
+                Sysem.out.println("IndiraGandhi");
+            }
+        }
+
+        class RajeevGandhi extends IndiraGandhi {
+            void name() {
+                Sysem.out.println("RajeevGandhi");
+            }
+
+            void name(String x) {               // Overloading of method
+                Sysem.out.println("IndiraGandhi");
+            }
+        }
+
+        class SanjayGandhi extends JawarharlalGandhi {
+            void name() {                       // Overriding of method
+                Sysem.out.println("SanjayGandhi");
+            }
+        }
+
+        class RahulGandhi extends IndiraGandhi {
+        }
+
+        class BarunGandhi extends SanjayGandhi {
+        }
+
+        class Working {
+            public static void main(String[] args) {
+                MotilalNehru m = new MotilalNehru();
+                JawaharlalNehru j = new JawaharlalNehru();
+                IndiraGandhi i = new IndiraGandhi();
+                RajeevGandhi r = new RajeevGandhi();
+                SanjayGandhi s = new SanjayGandhi();
+                RahulGandhi rg = new RahulGandhi();
+                BarunGandhi bg = new BarunGandhi();
+
+                r.name();
+                m.name();
+                s.name();
+                bg.name();
+                i.name();
+                rg.name();
+                j.name();
+            }
+        }
+
+    =   POLYMORPHISM
+        What is Polymorphism?
+        In OOPs, Polymorphism means having same name to different entities.
+        There are two types of Polymorphism:
+        1)  Overloading of methods
+            When more than one method/funciton in the same class has same name
+            with different parameter list, it is overloading of methods.
+        2)  Overriding of methods
+            When a method is redefined in the child that exists in the parent
+            class, that is overriding of methods.
+
+    =   ASSIGNMENT:
+    =   Classname: Encoder, Decoder
+        Write a program to encode a text message by adding the position
+        number of every word to the ascii value of the capital letter
+        character of all characters in the text. All encoded text must
+        be displayed in lower case.
+    =   Actual text:    Attack white house
+        Encoded text:   auvdgp wikwi hpwvi
+
+
++----------------------+
+| Thursday, 05-12-2024 |  Day-12
++----------------------+
+    =   WAP to reverse each word within a given string using StringBuffer?
+        Original: Quick Brown Fox Jumps Over The Lazy Dog
+        Reverse1: kciuQ nworB xoF spmuJ revO ehT yzaL goD
+
+    =   APPLIED RULES
+       --------------------------------------------------------------------------
+                                                    OUTER   INNER   OUTER   INNER
+        SL  MODIFIER        FIELD   METHOD  CONSTR  CLASS   CLASS  INTERF  INTERF
+       --------------------------------------------------------------------------
+        1.  public          yes     yes     yes     yes     no      yes     no
+        2.  protected       yes     yes     yes     no      yes     no      yes
+        3.  private         yes     yes     yes     no      yes     no      yes
+        4.  <undefined>     yes     yes     yes     yes     no      yes     no
+       --------------------------------------------------------------------------
+        5.  abstract        no      yes     no      yes     yes     yes     yes
+        6.  final           yes     yes     no      yes     yes     no      no
+        7.  static          yes     yes     no      no      yes     no      yes
+        8.  native          no      yes     no      no      no      no      no
+        9.  synchronized    no      yes     no      no      no      no      no
+       10.  transient       yes     no      no      no      no      no      no
+       11.  volatile        yes     no      no      no      no      no      no
+       12.  strictfp        no      yes     no      yes     yes     yes     yes
+       --------------------------------------------------------------------------
+
+    =   How to create a class?
+        A class is created with the following syntax:
+            [access-spcifier]
+            [modifier]
+            class <className>
+            [extends <parentClass>]
+            [implements [interfaces...]
+            {}
+
+            public abstract class Planet extends Sun {}
+            protected class Planet extends Sun {}
+
+            class OuterClass {
+                class InnerClass {
+                }
+            }
+
+    =   What are the members/contents of a class?
+        There are 3 members/contents of a class:
+            1.  Field/Global-Variable members
+                int n;
+                int n = 10;
+                String name;
+                String father = "Mahatma Gandhi";
+
+                [access-specifier]
+                [modifier]
+                <data-type> <var-name>
+                [= <value>]
+                ;
+
+                public int age = 23;                //  yes-valid
+                public static String name;          //  yes-valid
+                protected abstract home;            //  no-invalid
+                protected String name;              //  yes-valid
+
+            2.  Constructor
+                a)  Constructor name must resemble with the class name
+                b)  To transform a class into an object with help of new operator
+
+                String j = "Justice";                       //  yes-valid
+                String k = new String("Java Programmer");   //  yes-valid
+                String n = new String(25.33F);              //  no-invalid
+
+                [access-specifier]
+                [modifier]
+                <className>([parameter-list])
+                [throws <exception-list>]
+                {}
+
+            3.  Methods/Functions member
+                One or more lines of code within an unit.
+
+                [access-specifier]
+                [modifier]
+                <return-type|void> <method-name>([parameter-list])
+                [throws <exception-list>]
+                {}
+
+
++--------------------+
+| Friday, 06-12-2024 |  Day-13
++--------------------+
+    =   ASSIGNMENT
+        WAP to count the number of occurances of each alphabet used in a sentence?
+
+            Hello World
+            D = 1
+            E = 1
+            H = 1
+            L = 3
+            O = 2
+            R = 1
+
+        public class AlphaCount {
+            public static void main(String[] args) {
+                String text = "Hello World";
+                char c;
+                int countA = 0;
+                int countB = 0;
+                int countC = 0;
+                int countD = 0;
+                int countE = 0;
+                int countF = 0;
+                int countG = 0;
+                int countH = 0;
+                int countI = 0;
+                int countJ = 0;
+                int countK = 0;
+                int countL = 0;
+                int countM = 0;
+                int countN = 0;
+                int countO = 0;
+                int countP = 0;
+                int countQ = 0;
+                int countR = 0;
+                int countS = 0;
+                int countT = 0;
+                int countU = 0;
+                int countV = 0;
+                int countW = 0;
+                int countX = 0;
+                int countY = 0;
+                int countZ = 0;
+
+                for(int i=0; i<text.length(); i++) {
+                    c = text.charAt(i);
+                    if(c==65 || c==97) countA++;
+                    else if(c==66 || c==98) countB++;
+                    else if(c==67 || c==99) countC++;
+                    else if(c==68 || c==100) countD++;
+                    else if(c==69 || c==101) countE++;
+                    else if(c==70 || c==102) countF++;
+                    else if(c==71 || c==103) countG++;
+                    else if(c==72 || c==104) countH++;
+                    else if(c==73 || c==105) countI++;
+                    else if(c==74 || c==106) countJ++;
+                    else if(c==75 || c==107) countK++;
+                    else if(c==76 || c==108) countL++;
+                    else if(c==77 || c==109) countM++;
+                    else if(c==78 || c==110) countN++;
+                    else if(c==79 || c==111) countO++;
+                    else if(c==80 || c==112) countP++;
+                    else if(c==81 || c==113) countQ++;
+                    else if(c==82 || c==114) countR++;
+                    else if(c==83 || c==115) countS++;
+                    else if(c==84 || c==116) countT++;
+                    else if(c==85 || c==117) countU++;
+                    else if(c==86 || c==118) countV++;
+                    else if(c==87 || c==119) countW++;
+                    else if(c==88 || c==120) countX++;
+                    else if(c==89 || c==121) countY++;
+                    else if(c==90 || c==122) countZ++;
+                }
+
+                if(countA>0) System.out.println("A = "+countA);
+                if(countB>0) System.out.println("B = "+countB);
+                if(countC>0) System.out.println("C = "+countC);
+                if(countD>0) System.out.println("D = "+countD);
+                if(countE>0) System.out.println("E = "+countE);
+                if(countF>0) System.out.println("F = "+countF);
+                if(countG>0) System.out.println("G = "+countG);
+                if(countH>0) System.out.println("H = "+countH);
+                if(countI>0) System.out.println("I = "+countI);
+                if(countJ>0) System.out.println("J = "+countJ);
+                if(countK>0) System.out.println("K = "+countK);
+                if(countL>0) System.out.println("L = "+countL);
+                if(countM>0) System.out.println("M = "+countM);
+                if(countN>0) System.out.println("N = "+countN);
+                if(countO>0) System.out.println("O = "+countO);
+                if(countP>0) System.out.println("P = "+countP);
+                if(countQ>0) System.out.println("Q = "+countQ);
+                if(countR>0) System.out.println("R = "+countR);
+                if(countS>0) System.out.println("S = "+countS);
+                if(countT>0) System.out.println("T = "+countT);
+                if(countU>0) System.out.println("U = "+countU);
+                if(countV>0) System.out.println("V = "+countV);
+                if(countW>0) System.out.println("W = "+countW);
+                if(countX>0) System.out.println("X = "+countX);
+                if(countY>0) System.out.println("Y = "+countY);
+                if(countZ>0) System.out.println("Z = "+countZ);
+            }
+        }
+
+    =   WAP to find the smallest and largest characters in a set of words?
+            String words = "Armaggedon mountain is in Iran";
+
+    =   WAP to find the smallest and largest numbers in an array of int numbers?
+            int[] nums = {56,110,34,21,345,11,23,55,99,78,83,81,221,198};
+
+    =   Convert a word of alphabets to a box shape?
+            Example: Say the word is INDIA, JUPITER, SUN
+            Convert: I N D I A        J U P I T E R        S U N
+                     N       I        U           E        U   U
+                     D       D        P           T        N U S
+                     I       N        I           I
+                     A I D N I        T           P
+                                      E           U
+                                      R E T I P U J
+
+
++--------------------+
+| Monday, 09-12-2024 |  Day-14
++--------------------+
+    =   Answer all questions given in Questions.txt
+
+
+
++---------------------+
+| Tuesday, 17-12-2024 |  Day-15
++---------------------+
+    =   Class suspended from 09-12-2024 to 16-12-2024 due to Sonali Das' personal problem
+
+    =   A class may be used by 2 ways:
+        1)  By inheritance
+        2)  By object reference
+
+    =   What is inheritance?
+
+        class Parent {
+            public void myName() {
+                System.out.println("James Gosling");
+            }
+        }
+
+        class Child extends Parent {
+            public Child() {
+                myName();
+            }
+        }
+
+    =   What is object reference?
+
+        class Child {
+            public Child() {
+                Parent p = new Parent();
+                p.myName();
+            }
+        }
+
+    =   Class hierarchy
+
+        iig.account
+        +- Print
+        +- Write
+        +- Balance
+        iig.varsity
+        +- Print
+        +- Teach
+        +- Learn
+        iig.academy
+        +- Print
+        +- Classroom
+        +- Teach
+
+    =   How to create a package?
+        A package is created using the keyword "package".
+        Declare the following line in the top of a program:
+            package iig.account;
+
+            public class Print {
+            }
+
+    =   Access Specifier
+
+        public:
+        >   A public class is accessible from other classes both by inheritance
+            and by object reference across the same package or from other packages
+
+        protected:
+        >   A protected class in accessible from other classes both by inheritance
+            and by object reference from the same package. From different package,
+            only object reference is allowed. Inheritance is restricted.
+
+        private:
+        >   When a class is private, it is completely restricted to be accessed.
+
+        <undefined>:
+        >   If a class is undefined the same class is accessible from other classes
+            both by inheritance and by object reference from the same package. From
+            different package, only inheritance is allowed. Object reference is
+            restricted.
+
+    =   Modifiers
+
+        final:
+            The final modifier is applicable to a class, a field, and a method.
+
+            public final class Important {}
+            public final String country = "INDIA";
+            public Important() {}
+            public final double calculation() {}
+
+            >   If the class is final, it is restricted to be inherited. A final
+                class can't have subclasses.
+            >   If a field is final, the value of the field can't change.
+            >   A constructor can't be final.
+            >   If a method is final, it is restricted to be overrided.
+
+        static:
+            The static modifier is applicable to class, field, and methods.
+
+            public class Milkyway {}
+            public static String animal = "GODZILLA";
+            public String child = "TOADLING";
+
+            >   A outer class can't be static.
+            >   static fields are accessed by class name reference
+            >   If a field is static, all instances of the class in which the
+                static field exists, share common memory location.
+
+                Milkyway m1 = new Milkyway();
+                Milkyway m2 = new Milkyway();
+                Milkyway m3 = new Milkyway();
+
+
+                                           MEMORY
+                     m1         m2       m3
+                +-----------------------------+---------------------------------+
+         animal |                             |                                 |
+                +----------+---------+--------+                                 |
+          child |          |         |        |                                 |
+                +----------+---------+--------+                                 |
+                |                                                               |
+                |                                                               |
+                |                                                               |
+                |                                                               |
+                +---------------------------------------------------------------+
+
+            >   A constructor can't be static.
+            >   If a method is static, the same method may be called by classname reference.
+
+
++-----------------------+
+| Wednesday, 18-12-2024 |  Day-16
++-----------------------+
+    =   Exception handling
+
+    =   Exception handling is a fault resistance technique implemented in Java programming
+        language.
+
+    =   To make a program fault resistant, put the program code within a try block.
+    =   try is a statement. The try statement is associated with a block. try {}.
+        The try statement has another two clauses, they are catch and finally. The
+        complete syntax of try statement is as follows:
+
+                try {
+                    ..............
+                    ..............
+                    ..............
+                } catch(ClassCastException e) {
+
+                } catch(InterruptedException e) {
+
+                } catch(ArrayIndexOutOfBoundsException e) {
+
+                } catch(ArithmeticException e) {
+                    System.out.println("This is an exception: "+e);
+                }
+
+        When an exception occurs within the try block, an exception object is
+        automatically generated. All other lines below the exception line are
+        ignored and abandoned. The object searches an appropriate catch where
+        it an store the object. On finding the appropriate catch, the object
+        is stored and the corresponding block is executed.
+
+    =   What is an exception?
+        An exception is a class.
+
+
+        Object
+        +- Throwable
+        |  +- Error
+        |  |  +- AnnotationFormatError
+        |  |  +- AssertionError
+        |  |  +- AWTError
+        |  |  +- CoderMalfunctionError
+        |  |  +- FactoryConfigurationError
+        |  |  +- FactoryConfigurationError
+        |  |  +- IOError
+        |  |  +- LinkageError
+        |  |  +- SchemaFactoryConfigurationError
+        |  |  +- ServiceConfigurationError
+        |  |  +- ThreadDeath
+        |  |  +- TransformerFactoryConfigurationError
+        |  |  +- VirtualMachineError
+        |  +- Exception
+        |  |  +- AclNotFoundException
+        |  |  +- ActivationException
+        |  |  |  +- UnknownGroupException
+        |  |  |  +- UnknownObjectException
+        |  |  +- AlreadyBoundException
+        |  |  +- ApplicationException
+        |  |  +- AWTException
+        |  |  +- BackingStoreException
+        |  |  +- BadAttributeValueExpException
+        |  |  +- BadBinaryOpValueExpException
+        |  |  +- BadLocationException
+        |  |  +- BadStringOperationException
+        |  |  +- BrokenBarrierException
+        |  |  +- CertificateException
+        |  |  |  +- CertificateEncodingException
+        |  |  |  +- CertificateExpiredException
+        |  |  |  +- CertificateNotYetValidException
+        |  |  |  +- CertificateParsingException
+        |  |  +- CloneNotSupportedException
+        |  |  +- DataFormatException
+        |  |  +- DatatypeConfigurationException
+        |  |  +- DestroyFailedException
+        |  |  +- ExecutionException
+        |  |  +- ExpandVetoException
+        |  |  +- FontFormatException
+        |  |  +- GeneralSecurityException
+        |  |  +- GSSException
+        |  |  +- IllegalClassFormatException
+        |  |  +- InterruptedException
+        |  |  +- IntrospectionException
+        |  |  +- InvalidApplicationException
+        |  |  +- InvalidMidiDataException
+        |  |  +- InvalidPreferencesFormatException
+        |  |  +- InvalidTargetObjectTypeException
+        |  |  +- IOException
+        |  |  +- JAXBException
+        |  |  +- JMException
+        |  |  +- KeySelectorException
+        |  |  +- LambdaConversionException
+        |  |  +- LastOwnerException
+        |  |  +- LineUnavailableException
+        |  |  +- MarshalException
+        |  |  +- MidiUnavailableException
+        |  |  +- MimeTypeParseException
+        |  |  +- MimeTypeParseException
+        |  |  +- NamingException
+        |  |  +- NoninvertibleTransformException
+        |  |  +- NotBoundException
+        |  |  +- NotOwnerException
+        |  |  +- ParseException
+        |  |  +- ParserConfigurationException
+        |  |  +- PrinterException
+        |  |  +- PrintException
+        |  |  +- PrivilegedActionException
+        |  |  +- PropertyVetoException
+        |  |  +- ReflectiveOperationException
+        |  |  +- RefreshFailedException
+        |  |  +- RemarshalException
+        |  |  +- SeriousException
+        |  |  +- RuntimeException
+        |  |  |  +- AnnotationTypeMismatchException
+        |  |  |  +- ArithmeticException
+        |  |  |  |  +- ImportantException
+        |  |  |  +- ArrayStoreException
+        |  |  |  +- BufferOverflowException
+        |  |  |  +- BufferUnderflowException
+        |  |  |  +- CannotRedoException
+        |  |  |  +- CannotUndoException
+        |  |  |  +- ClassCastException
+        |  |  |  +- CMMException
+        |  |  |  +- CompletionException
+        |  |  |  +- ConcurrentModificationException
+        |  |  |  +- DataBindingException
+        |  |  |  +- DateTimeException
+        |  |  |  +- DOMException
+        |  |  |  +- EmptyStackException
+        |  |  |  +- EnumConstantNotPresentException
+        |  |  |  +- EventException
+        |  |  |  +- FileSystemAlreadyExistsException
+        |  |  |  +- FileSystemNotFoundException
+        |  |  |  +- IllegalArgumentException
+        |  |  |  +- IllegalMonitorStateException
+        |  |  |  +- IllegalPathStateException
+        |  |  |  +- IllegalStateException
+        |  |  |  +- IllformedLocaleException
+        |  |  |  +- ImagingOpException, IncompleteAnnotationException, IndexOutOfBoundsException, JMRuntimeException, LSException, MalformedParameterizedTypeException, MalformedParametersException, MirroredTypesException, MissingResourceException, NegativeArraySizeException, NoSuchElementException, NoSuchMechanismException, NullPointerException, ProfileDataException, ProviderException, ProviderNotFoundException, RasterFormatException, RejectedExecutionException, SecurityException, SystemException, TypeConstraintException, TypeNotPresentException, UncheckedIOException, UndeclaredThrowableException, UnknownEntityException, UnmodifiableSetException, UnsupportedOperationException, WebServiceException, WrongMethodTypeException
+        |  |  +- SAXException
+        |  |  +- ScriptException
+        |  |  +- ServerNotActiveException
+        |  |  +- SOAPException
+        |  |  +- SQLException
+        |  |  +- TimeoutException
+        |  |  +- TooManyListenersException
+        |  |  +- TransformerException
+        |  |  +- TransformException
+        |  |  +- UnmodifiableClassException
+        |  |  +- UnsupportedAudioFileException
+        |  |  +- UnsupportedCallbackException
+        |  |  +- UnsupportedFlavorException
+        |  |  +- UnsupportedLookAndFeelException
+        |  |  +- URIReferenceException
+        |  |  +- URISyntaxException
+        |  |  +- UserException
+        |  |  +- XAException
+        |  |  +- XMLParseException
+        |  |  +- XMLSignatureException
+        |  |  +- XMLStreamException
+        |  |  +- XPathException
+
+
+    =   There are 2 types of exceptions:
+            1)  Checked exception
+                >   In checked exception, the compiler checks if the exception given
+                    in the catch clause is actually generated from the corresponding
+                    try block.
+                >   The exception is thrown from the body of the try block but appropriate
+                    exception is not given in the catch clauses.
+            2)  Unchecked exception
+                When an exception inherits the Throwable exception through the
+                RuntimeException, it is treated as unchecked exception.
+
+                    Object
+                    +- Throwable
+                    |  +- Exception
+                    |  |  +- RuntimeException
+                    |  |  |  +- MyException
+
++----------------------+
+| Thursday, 19-12-2024 |   Day-17
++----------------------+
+    =   User Defined Exception handling
+
+    =   CASE STUDY
+        A certain country want to issue voter-id card to all its citizen who are
+        eligible for voting. Persons who are 18 through 90 years old are eligible
+        for voting.
+
+        Object
+        +- Throwable
+        |  +- Exception
+        |  |  +- AgeException
+        |  |  |  +- InvalidAgeException
+        |  |  |  |  +- NegativeAgeException
+        |  |  |  |  +- ZeroAgeException
+        |  |  |  +- AgeCeilingException
+        |  |  |  |  +- TooYoungAgeException
+        |  |  |  |  +- TooOldAgeException
+
+        Check the validity of age for printing voter-id card:
+            {25,33,-55,66,51,0,99,73,77,12,45,15,81,76,18,-11,56,0,33}
+
+    =   What is the work of super keyword?
+        The super keyword calls the matching constructor of the immediate parent
+        class. The super command can be only written with a child class constructor.
+
+    =   ASSIGNMENT:
+
+        Username:
+        Password:
+
+        Object
+        +- Throwable
+        |  +- Exception
+        |  |  +- LoginException
+        |  |  |  +- UsernameException
+        |  |  |  |  +- EmptyUsernameException
+        |  |  |  |  +- MinLengthUsernameException
+        |  |  |  |  +- MaxLengthUsernameException
+        |  |  |  |  +- NoAlphabeticCharacterInUsernameException
+        |  |  |  |  +- NoDigitCharacterInUsernameException
+        |  |  |  |  +- NoUppercaseCharacterInUsernameException
+        |  |  |  +- PasswordException
+        |  |  |  |  +- EmptyPasswordException
+        |  |  |  |  +- MinLengthPasswordException
+        |  |  |  |  +- MaxLengthPasswordException
+
+        Take a username and a password from the user and check the validity
+        by matching it with the following users:
+
+            { {"Milan1963","paragon33"},
+              {"Sonali2005","doctor256"},
+              {"Suraj55","helloworld@2024"},
+              {"ZipZip007","Humanbeing"},
+              {"Projectile11","safaire"}
+            }
+
++--------------------+
+| Friday, 20-12-2024 |   Day-18
++--------------------+
+    =   There is an array of int numbers:
+        {44,67,65,33,25,77,54,50,20,16,85,48,39,75}
+        Write a program to find the indexes that are divisible by 5.
+
+    =   ASSIGNMENT:
+        Complete the LoginException program.
+
+
++--------------------+
+| Monday, 23-12-2024 |   Day-19
++--------------------+
+    =   WAP to print a figure as follows:
+                    *
+                    ***
+                    *****
+                    *******
+                    *********
+                    ***********
+                    *************
+                    ***************
+                    *************
+                    ***********
+                    *********
+                    *******
+                    *****
+                    ***
+                    *
+
+    =   WAP to print a figure as follows:
+                                   *
+                                 ***
+                               *****
+                             *******
+                           *********
+                         ***********
+                       *************
+                     ***************
+                       *************
+                         ***********
+                           *********
+                             *******
+                               *****
+                                 ***
+                                   *
+
+    =   There are 3 types of computer languages:
+        1.  Passive language
+            A type of computer language that is used for user-interface. To display
+            good looking screens to the user. This language is not capable of doing
+            any computation, can't make decisions.
+            Example of these langauges are HTML, SGML, etc.
+            HTML = Hyper Text Markup Language
+            SGML = Standard Generalized Markup Language
+
+            The best editor to user HTML is Visual Studio Code from Microsoft
+            HTML is a language of tags. Keywords wrapped within angle brackets <>.
+            Mostly the tags have a opening tag and a end tag.
+            The end tag starts with a slash character /.
+            Tags are nested within other tags.
+
+            <html>
+                <head>
+                    <title></title>
+                    <meta></meta>
+                </head>
+                <body>
+                    <img />
+                    <br />
+
+                </body>
+            </html>
+
+            Tags are also known as ELEMENTS. There are 2 types of HTML tags/elements.
+            1.  Terminator required element
+            2.  Self-termnated element
+
+        2.  Active language
+        3.  Dynamic language
+
+    =   ASSIGNMENT:
+        Write a program to display the following figure:
+                    1               1
+                    12             21
+                    123           321
+                    1234         4321
+                    12345       54321
+                    123456     654321
+                    1234567   7654321
+                    12345678 87654321
+                    12345678987654321
+
++----------------------+
+| Thursday, 26-12-2024 |   Day-20
++----------------------+
+    =   What is a table in html?
+        Table is an element. It is a terminator required element. Table displays
+        data in 2 dimensional format.
+
+        +------+------------+--------------------+---+-------+
+        |      |            |                    |   |       |
+        +------+------------+--------------------+---+-------+
+        |      |            |                    |   |       |
+        +------+------------+--------------------+---+-------+
+        |      |            |                    |   |       |
+        +------+------------+--------------------+---+-------+
+        |      |            |                    |   |       |
+        +------+------------+--------------------+---+-------+
+
+        The table element has another 6 sub-elements nested within. The list of the
+        sub-elements are:
+            <table>
+                <caption></caption>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+    =   The <HR> element contains the following attributes:
+        >   align, noshade, size, and width
+
+    =   ASSIGMENT:
+        +-------+-------------------------------+-----------------------------------------------------------------------------------------------------------+
+        |       |                               |                                           POPULATION                                                      |
+        |       |                               |-----------------------------------------------------+-----------------------------------------------------|
+        |       |                               |                           URBAN                     |                           RURAL                     |
+        |       |                               |--------------------------+--------------------------+--------------------------+--------------------------|
+        |       |                               |           MALE           |           FEMALE         |          MALE            |           FEMALE         |
+        |       |                               |-----+------+-------+-----+-----+------+-------+-----+-----+------+-------+-----+-----+------+-------+-----|
+        |  SLNO | NAME OF THE DISTRICT          | <5  | 6-15 | 16-25 | >25 | <5  | 6-15 | 16-25 | >25 | <5  | 6-15 | 16-25 | >25 | <5  | 6-15 | 16-25 | >25 |
+        |-------+-------------------------------+-----+------+-------+-----+-----+------+-------+-----+-----+------+-------+-----+-----+------+-------+-----|
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+
+    =   CLASSWORK-(1):
+        +-------+---------------------------+------------+-------------------------------------------------+
+        |       |                           |            |                      AGE GROUP                  |
+        |       |                           |            +-----------+------------+------------+-----------+
+        |       |                           |            | >5 & <=10 | >10 & <=15 | >15 & <=20 |    >20    |
+        |       |                           |            +-----+-----+------+-----+------+-----+-----+-----+
+        |  SLNO |  CANDIDATE NAME           |     DOB    |  M  |  F  |   M  |  F  |   M  |  F  |  M  |  F  |
+        +-------+---------------------------+------------+-----+-----+------+-----+------+-----+-----+-----+
+
++--------------------+
+| Friday, 27-12-2024 |   Day-21
++--------------------+
+    =   Each element in HTML contains a set of attributes. There are 3 types of attributes:
+        >   Standard attribute
+            Those attributes that are created specifically for the element
+        >   Common attribute
+            Those attributes that are applicable for all element
+            Example: ID, CLASS, STYLE, TITLE, LANG, DIR, etc.
+        >   Event attribiute
+            Event attributes are applicable to those elements which create user interface.
+            -   ONCLICK, when the mouse button is clicked on an element;
+            -   ONDBLCLICK, when the mouse button is double-clicked on an element;
+            -   ONMOUSEDOWN, when the mouse button is pressed over an element;
+            -   ONMOUSEUP, when the mouse button is released over an element;
+            -   ONMOUSEOVER, when the mouse is moved onto an element;
+            -   ONMOUSEMOVE, when the mouse is moved while over an element;
+            -   ONMOUSEOUT, when the mouse is moved away from an element;
+            -   ONKEYPRESS, when a key is pressed and released over an element;
+            -   ONKEYDOWN, when a key is pressed down over an element;
+            -   ONKEYUP, when a key is released over an element.
+
+    =   There is an element in the name <IMG>. It is a self-terminated element.
+        It displays an image in the body of the browser.
+
+
++--------------------+
+| Monday, 30-12-2024 |
++--------------------+
+    =   Faculty on leave
+
++---------------------+
+| Tuesday, 31-12-2024 |
++---------------------+
+    =   Faculty on leave
+
++-----------------------+
+| Wednesday, 01-01-2025 |
++-----------------------+
+    =   New Year Day
+
++----------------------+
+| Thursday, 02-01-2025 |
++----------------------+
+    =   Students on leave - informed
+
++--------------------+
+| Friday, 03-01-2025 |
++--------------------+
+    =   Students on leave - informed
+
++--------------------+
+| Monday, 06-01-2025 |   Day-22
++--------------------+
+    =   HTML - Forms
+    =   HTML supports element that provide the following UI components:
+        >   Text Field              <input> element
+        >   Button                  <input> and <button>
+        >   Label                   <label>
+        >   Dropdown Combo Box      <select>
+        >   Radio Button            <input>
+        >   Check boxes             <input>
+        >   List box                <select>
+
+    =   FORM
+        STUDENT REGISTRATION FORM
+        1.  Date                    date picker                 <input type='date'>
+        2.  Registration No.        text field                  <input type='text'>
+        3.  Candidate's Name        text field                  <input type='text'>
+        4.  Father's Name           text field                  <input type='text'>
+        5.  Gender                  radio button                <input type='radio'>
+        6.  Date-of-Birth           date picker                 <input type='date'>
+        7.  Innoculation            check boxes                 <input type='checkbox'>
+        8.  Address                 text field                  <input type='text'>
+        9.  Location                drop down combo box         <select>
+
+    =   Innoculation List
+        BCG: Given at birth via intradermal route
+        Hepatitis B: Given at birth via intramuscular route within 24 hours
+        OPV: Given at birth or as early as possible within 15 hours via oral route
+        Other vaccines that babies receive at different ages include:
+        DTaP: Diphtheria, tetanus, and acellular pertussis vaccine, given at 2 months, 4 months, and 6 months
+        Hib: Haemophilus influenzae type b vaccine, given at 2 months, 4 months, and 6 months
+        IPV: Inactivated poliovirus vaccine, given at 6 months
+        PCV: Pneumococcal conjugate vaccine, given at 6 months
+        RV: Rotavirus vaccine, given at 2 months, 4 months, and 6 months
+        Influenza (flu): Given annually for children 6 months and older
+        COVID-19: Can be given any time beginning at age 6 months
+
+
++---------------------+
+| Tuesday, 07-01-2025 |   Day-23
++---------------------+
+    =   Covert the following information in a table:
+        1, Milan Das, B K Das, Male, 25-11-1963, PhD, Java Specialist
+        2, Suraj Samal, S Samal, Male, 13-03-2005, B Tech, Developer
+        3, Sonali Das, S Das, Female, 23-11-2006, B Tech, Developer
+
+    =   Answer the questions given in Test-IIG-002 (07-01-2025)-HTML2.docx
+
+    =   Course covered in Java
+        1.  How to create a class
+        2.  Members of a class
+            a)  Fields
+            b)  Constructors
+            c)  Methods
+        3.  Access specifiers
+            a)  public
+            b)  protected
+            c)  private
+            d)  <undefined>
+        4.  Modifiers
+            a)  final
+            b)  static
+        5.  Exception Handling
+
+
+    =   abstract modifier
+        The abstract modifier is not applicable to a field or constructor.
+        The abstract modifier is only applicable to methods and class
+
+        The abstract modifier allows a method or a class to remain incomplete.
+
+        abstract class Work {
+            public abstract String reverse(String original);
+        }
+
++-----------------------+
+| Wednesday, 08-01-2025 |   Day-24
++-----------------------+
+    =   There are 3 types of data files.
+        1.  CSV (Comma Separated Values) file
+            1, Milan Das, B K Das, Male, 25-11-1963, PhD, Java Specialist
+            2, Suraj Samal, S Samal, Male, 13-03-2005, B Tech, Developer
+            3, Sonali Das, S Das, Female, 23-11-2006, B Tech, Developer
+
+        2.  DB (Data Base) files
+            0001Milan Das                     B K Das                       Male  25-11-1963PhD          Java Specialist
+            0002Suraj Samal                   S Samal                       Male  13-03-2005B Tech       Developer
+            0003Sonali Das                    S Das                         Female23-11-2006B Tech       Developer
+
+        3.  RDBMS (Relational Data Base Management System) files
+            >   SQL language is used to communicate with the RDBMS engine
+
+    =   java.io
+        Object
+        +- InputStream (8 bit Byte-Stream)
+        |  +- FileInputStreanm
+        +- Reader (16 bit Character-Stream)
+        |  +- BufferedReader
+        |  +- InputStreamReader
+
+    =   Reading from Keyboard
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+    =   Write a program to read the following data from keyboard and write it in a
+        CSV file. Example: StudentInfo.java
+
++----------------------+
+| Thursday, 09-01-2025 |   Day-25
++----------------------+
+    =   Reflection
+        A process that reengineers a .class file to a .java file. It reads a byte code
+        file and reengineers to java source file.
+
+    =   ASSIGNMENT:
+        Write the reflection program?
+
+
++--------------------+
+| Friday, 10-01-2025 |   Day-26
++--------------------+
+    =   Generating Java Help from multiple classes from command line parameter
+
+    =   WAP to complete a series with 10 number:
+            1,  3,  5,  11,   21, ......      (n, n*2-1, n*2+1, n*2-1, n*2+1, ...
+
+
++---------------------+
+| Tuesday, 14-01-2025 |   Day-27
++---------------------+
+    =   A program to generate the help of a class in the specified file or in the
+        console if no file name is specified.
+
+            java Reflection java.lang.StringBuffer help.txt
+            java Reflection java.lang.StringBuffer
+
+    =   WAP to print the following figure of pattern:
+                            1
+                           212
+                          32123
+                         4321234
+                        543212345
+                       65432123456
+                      7654321234567
+                     876543212345678
+                    98765432123456789
+
++-----------------------+
+| Wednesday, 15-01-2025 |   Day-28
++-----------------------+
+    =   Java is normally installed on the C:\Program Files folder
+    =   JDK stands for Java Development Kit
+        JDK contains:
+            1.  JRE (Java Runtime Environment)
+                >   JVM (Java Virtual Machine)
+            2.  Java API (Programs written in Java)
+            3.  src.zip (The source code of all API)
+            4.  Java tools in \bin folder
+                >   java.exe        To run a Java program from command prompt
+                >   javac.exe       To compile a Java program and generate .class file
+                >   javap.exe       Displays the content of a .class file
+
+    =   java.awt provides classes that create a GUI (Graphical User Interface) program.
+        The java.awt uses the default routines of the Operating System. Java.awt is a
+        failure because when the platform changes. java.awt is platform dependent.
+
+    =   To make GUI programs platform dependent, Java provided javax.swing package.
+        The javax.swing didn't use the resident gui routines of the OS. It created
+        its own routines which are known as JFC (Java Foundation Class).
+
+    =   A constructor is implicitly created if no constructor is defined by the
+        programmer.
+
+    =   Project
+        +--------------------------------------------------------+
+        |                                                        |
+        +--------------------------------------------------------+
+        |                                                        |
+        |               STUDENT INFORMATION SYSTEM               |
+        |                                                        |
+        |       1. Roll No.:         |||||||||                   |
+        |       2. Candidate's Name: ||||||||||||||||||||||      |
+        |       3. Father's Name:    ||||||||||||||||||||||      |
+        |       4. Gender:           x Male     x Female         |
+        |       5. Date of Birth:    ||||||||||||                |
+        |       6. Qualification:    !!!!!!!!!!!!!!!!!!^         |
+        |       7. Location:         !!!!!!!!!!!!!!!!!!^         |
+        |       8. Designation:      !!!!!!!!!!!!!!!!!!^         |
+        |                                                        |
+        |           +--------------+  +--------------+           |
+        |           |     SAVE     |  |     EXIT     |           |
+        |           +--------------+  +--------------+           |
+        |                                                        |
+        |                                                        |
+        +--------------------------------------------------------+
+
+
++----------------------+
+| Thursday, 16-01-2025 |   Day-29
++----------------------+
+    =   In javax.swing there are 2 categories of classes.
+        >   Component
+        >   Cantainer
+
+    =   List of Component and Container classes:
+            Component                   Container
+            ------------------------------------------------------------
+            JLabel                      JFrame
+            JTextField                  JPanel
+            JRadioButton                JLabel
+            JButton                     JButton
+            JComboBox
+
+        Every Container is also a Component. When a Container is added to another Container
+        it becomes a Component.
+
+        There is a LayoutManager set on every Container. There are 5 LayoutManagers provided
+        by java.awt package. These LayoutManagers may be used in Swing.
+            1.  FlowLayout
+                Provides facility to add component to the Container like a word processor.
+                Components are added from left to right. When the line is filled, it
+                automatically creates next line.
+                +-----------------------------------------------------------+
+                |   Quick Brown Fox Jumps Over The Lazy Dog. Quick Brown    |
+                |   Fox Jumps Over The Lazy Dog.                            |
+                |                                                           |
+                |                                                           |
+                |                                                           |
+                |                                                           |
+                |                                                           |
+                |                                                           |
+                |                                                           |
+                |                                                           |
+                +-----------------------------------------------------------+
+            2.  GridLayout
+                The GridLayout add components in a 2 dimensional grid format. The size
+                of the components is set proportionate to the size of the container.
+            3.  BorderLayout
+                The BorderLayout LayoutManager divides the container into 5 parts.
+                They are NORTH, WEST, SOUTH, EAST and CENTER.
+                +----------------------------------------------------------+
+                |                        NORTH                             |
+                +----------------------------------------------------------+
+                |          |                                     |         |
+                |    W     |                                     |    E    |
+                |    E     |                                     |    A    |
+                |    S     |             CENTER                  |    S    |
+                |    T     |                                     |    T    |
+                |          |                                     |         |
+                |          |                                     |         |
+                +----------------------------------------------------------+
+                |                         SOUTH                            |
+                +----------------------------------------------------------+
+            4.  CardLayout
+            5.  GridBagLayout
+
+        Other LayoutManagers are also there in javax.swing package.
+    =   What is the work of LayoutManager?
+        The LayoutManager object determines the location and dimension of the component
+        that are added to the container active with a LayoutManager. It automatically
+        set the size and location of the component.
+
+    =
+
++--------------------+
+| Friday, 17-01-2025 |   Day-30
++--------------------+
+    =   Add features to save the data in CSV file.
+
+    =   ASSIGNMENT:
+        Write a program to create a form for contact list
+
++---------------------+
+| Tuesday, 21-01-2025 |   Day-31
++---------------------+
+    =   In MySQL, the data is kept within a container called DataBase.
+    =   To create a database type the following:
+        CREATE DATABASE java18;
+    =   To view the list of the databases already exists:
+        SHOW DATABASES;
+    =   To Delete a database:
+        DROP DATABASE java18;
+
+    =   Within the Database a list of objects may be created:
+        1.  Tables
+        2.  Indexes
+        3.  Sequences
+        4.  Views
+        5.  Stored Procedure
+        6.  Trigger
+
+    =   To create a Table object:
+        CREATE TABLE IF NOT EXISTS participants(
+            slno    INT(6)          NOT NULL AUTO_INCREMENT,
+            name    VARCHAR(30)     NOT NULL,
+            father  VARCHAR(30)     DEFAULT NULL,
+            gender  ENUM('F','M')   DEFAULT NULL,
+            dob     DATE            DEFAULT NULL,
+            qualif  VARCHAR(20)     DEFAULT NULL,
+            desig   VARCHAR(20)     DEFAULT NULL,
+            PRIMARY KEY(slno)
+        );
+
+    =   How to insert data into the table:
+        INSERT INTO participants VALUES
+            (1, "Milan Das", "B K Das", "M", "1963-11-25", "PhD", "Java Specialist"),
+            (2, "Suraj Samal", "S Samal", "M", "2005-03-13", "B Tech", "Developer"),
+            (3, "Sonali Das", "S Das", "F", "2006-11-23", "B Tech", "Developer");
+
+    =   How to retrieve the data from a table:
+        SELECT <column-list> FROM tableName;
+        SELECT slno,name,gender,dob FROM participants;
+        +------+-------------+--------+------------+
+        | slno | name        | gender | dob        |
+        +------+-------------+--------+------------+
+        |    1 | Milan Das   | M      | 1963-11-25 |
+        |    2 | Suraj Samal | M      | 2005-03-13 |
+        |    3 | Sonali Das  | F      | 2006-11-23 |
+        +------+-------------+--------+------------+
+        SELECT * FROM participants;
+        +------+-------------+---------+--------+------------+--------+-----------------+
+        | slno | name        | father  | gender | dob        | qualif | desig           |
+        +------+-------------+---------+--------+------------+--------+-----------------+
+        |    1 | Milan Das   | B K Das | M      | 1963-11-25 | PhD    | Java Specialist |
+        |    2 | Suraj Samal | S Samal | M      | 2005-03-13 | B Tech | Developer       |
+        |    3 | Sonali Das  | S Das   | F      | 2006-11-23 | B Tech | Developer       |
+        +------+-------------+---------+--------+------------+--------+-----------------+
+
+    =   To extract the data from a MySQL engine using Java application the following
+        steps must be followed:
+        Step-1:     Import java.sql package        import java.sql.*;
+        Step-2:     Load and register driver       Class.forName("com.mysql.jdbc.Driver");
+        Step-3:     Create Connection object       Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:java18", "root", "root");
+        Step-4:     Create Statement object        Statement stmt = conn.createStatement();
+        Step-5:     Create ResultSet object        ResultSet rs = stmt.executeQuery("sql statement");
+        Step-6:     Manipulate ResultSet
+        Step-7:     Close ResultSet, Statement, Connection
+
++-----------------------+
+| Wednesday, 22-01-2025 |   Day-32
++-----------------------+
+    =   Create a Contact List
+        Location                    Relation
+        = Bhubaneswar               = Sibling
+            > Subhasis                  > Tapan
+            > Suraj                     > Gourab
+            > Sonali                = Students
+            > Rashmi                    > Subhasis
+        = Cuttack
+            > Tapan
+
+    =   Create 3 tables:
+        1.  Contact
+        2.  Relation
+        3.  Location
+
+    =   Relation
+        1. School Friends
+        2. College Friends
+        3. Professional Friends
+        4. Family
+        5. Student
+    =   Location
+        1. Angul
+        2. Bhubaneswar
+        3. Cuttack
+        4. United States
+    =   Contact
+        1. Siddique     5   4   9778911223  siddique@gmail.com
+        2. Sonali       5   2
+
+    =   ASSIGNMENT:
+        Create necessary tables for keeping class attendance of a college
+        Tables required:
+            1.  CLASS
+                b.sc
+                b.tech
+                m.tech
+                m.c.a
+
+            2.  SECTION
+                Day
+                Mid-day
+                Night
+
+            3.  BRANCH
+                ece
+                cs
+
+            4.  STUDENT
+                1, Milan Das, 3, 2,
+
+            5.  ATTENDANCE
+                1, P
+
++----------------------+
+| Thursday, 23-01-2025 |   Day-33
++----------------------+
+    =   What is ResultSet?
+        ResultSet is an object which contains the meta-data and the data of a SELECT
+        statement
+
+            +----+--------------+--------+---------+--------+
+            | ID | Student-Name | Class  | Section | Branch |   ]    -> Meta Data
+ beforeFirst+----+--------------+--------+---------+--------+
+       first|  1 | Sonali       | B.TECH | Morning | EEE    |   ]
+ absolute(2)|  2 | Subasis      | B.SC   | Day     | CS     |   ]
+ absolute(3)|  3 | Suraj        | B.TECH | Day     | CS     |   ]    -> Data
+ absolute(4)|  4 | Rashmi       | M.TECH | Evening | ECE    |   ]
+        Last|  5 | Milan        | B.SC   | Mid-day | CS     |   ]
+   afterLast+----+--------------+--------+---------+--------+
+
+        When the ResultSet object is created, the cursor position remains in the
+        beforeFirst point
+
+        | ID      | Student-Name | Class    | Section  | Branch  |
+        | attn_id | stu_name     | cls_desc | sec_desc | br_desc |
+        | 1       | Sonali       | B.TECH   | Morning  | EEE     |
+        | 2       | Subasis      | B.SC     | Day      | CS      |
+        | 3       | Suraj        | B.TECH   | Day      | CS      |
+        | 4       | Rashmi       | M.TECH   | Evening  | ECE     |
+        | 5       | Milan        | B.SC     | Mid-day  | CS      |
+
+
++--------------------+
+| Friday, 24-01-2025 |   Day-34
++--------------------+
+    =   SQL commands are of 5 categories:
+        1.  DDL (Data Definition Language)
+            CREATE, DROP, ALTER, TRUNCATE
+        2.  DML (Data Manipulation Language)
+            INSERT, UPDATE, DELETE, CALL, EXPLAIN CALL, LOCK
+        3.  TCL (Transaction Control Language)
+            COMMIT, SAVEPOINT, ROLLBACK, SET TRANSACTION, SET CONSTRAINTS
+        4.  DQL (Data Query Language)
+            SELECT
+        5.  DCL (Data Control Language)
+            GRANT, REVOKE
+
+    =   Almost all the above SQL commands may be executed from Java programs:
+
+    =   Movement of the cursor in a ResultSet is possible with the help of the following
+        functions:
+            1.  beforeFirst()       -   Moves the cursor to the begining of data rows
+            2.  first()             -   Moves the cursor to the first row
+            3.  last()              -   Moves the cursor to the last row
+            4.  afterLast()         -   Moves the cursor to the afterLast row
+            5.  next()              -   Moves the cursor to the next row
+            6.  previous()          -   Moves the cursor to the previous row
+            7.  absolute(int)       -   Moves the cursor to the specified row
+            8.  relative(int)       -   Moves the cursor up or down relative to the current
+            9.  isBeforeFirst()     -   Returns true if the cursor is in the beforeFirst position
+            10. isAfterLast()       -   Returns true if the cursor is in the afterLast position
+            11. isFirst()           -   Returns true if the cursor is in the first row
+            12. isLast()            -   Returns true if the cursor is in the last row
+
+
++--------------------+
+| Monday, 27-01-2025 |   Day-35
++--------------------+
+
+    =   By default the ResultSet is not editable. To make the ResultSet editable, the
+        Statement from which the ResultSet is created must be editable.
+            stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+
+        The createStatement(int type, int concurrency)
+
+    =   ResultSets are of 3 types:
+        1.  ResultSet.TYPE_FORWARD_ONLY     (default)
+            When the ResultSet is created from a Forward_only Statement, the cursor
+            of the result set can move forward only, it can't move backward.
+        2.  ResultSet.TYPE_SCROLL_INSENSITIVE
+            The result set is scrollable but when other users update the result set,
+            the result set doesn't automatically update or recognise the changes.
+        3.  ResultSet.TYPE_SCROLL_SENSITIVE
+            The result set is scrollable and automatically updates the changes made
+            by other users.
+
+    =   ResultSets are of 2 concurrencies:
+        1.  ResultSet.CONCUR_READ_ONLY      (default)
+        2.  ResultSet.CONCUR_UPDATABLE
+
+        UPDATE
+        1.  Go to that row using absolute(int)
+        2.  Update the data in the required column using updateXXXXX
+        3.  Call the updateRow() method to make the changes permanent
+
+        INSERT
+        1.  Every result set creates a insert buffer
+            +----+--------------+--------+---------+--------+
+            | ID | Student-Name | Class  | Section | Branch |
+            +----+--------------+--------+---------+--------+
+            |  1 | Sonali       | B.TECH | Morning | EEE    |
+            |  2 | Subasis      | B.SC   | Day     | CS     |
+        >   |  3 | Suraj        | B.TECH | Day     | CS     |
+            |  4 | Rashmi       | M.TECH | Evening | ECE    |
+            |  5 | Milan        | B.SC   | Mid-day | CS     |
+            +----+--------------+--------+---------+--------+
+
+            Insert buffer
+            +----+--------------+--------+---------+--------+
+            |    |              |        |         |        |
+            +----+--------------+--------+---------+--------+
+
+            moveToInserRow()
+        2.  Update the content in the insert row using updateXXXXXX
+        3.  Call the insertRow() method
+
+        DELETE
+        The delete operation is simple. Move the row pointer to the desired row
+        and call deleteRow().
+        1.  absolute(int)
+        2.  deleteRow()
+
+    =   There are 3 types of Statments
+        1.  Statement
+            The SQL string provided to create the ResultSet is done during creation 
+            of the result set. This SQL string is compiled during run-time and make
+            the creating of the result set slow.
+            1.  Create a Statement
+            2.  Create a ResultSet from the Statement object
+
+        2.  PreparedStatement
+            When the Statement is created, the SQL statement is also provided. So
+            the SQL statement is pre-compiled and first.
+
+            PreparedStatement pstmt = conn.prepareStatement("sql string", resultset-type, resultset-concurency);
+
+            In preparedStatement, the data may be supplied to the SQL statement from
+            outside source through place holders.
+
+        3.  CallableStatement
+            CallableStatement is similar to PreparedStatement, only it takes the DDL
+            SQL commands.
+
+            INSERT INTO tableName VALUES(?, ?, ?, ?, ?);
+
+                setInt(question-mark-no, data-in-int)
+                setString(question-mark-no, data-in-string)
+                setDouble(question-mark-no, data-in-double)
+                setDate(question-mark-no, data-in-date)
+
+    =   ASSIGNMENT
+        Complete the Student Information System developed in java swing.
+
++---------------------+
+| Tuesday, 28-01-2025 |   Day-36
++---------------------+
+    =   Student data is saved from swing gui interface.
+
+    =   What is an interface in Java?
+
+    =   What is the difference between an abstract class and interface?
+
+    =   What is Collection?
+
+    =   What is generic in Java?
+        https://www.geeksforgeeks.org/generic-class-in-java/
+
+    =   What is a generic class?
+        Generic classes encapsulate operations that are not specific to a particular
+        data type. The most common use for generic classes is with collections like
+        linked lists, hash tables, stacks, queues, trees, and so on.
+
+
++-----------------------+
+| Wednesday, 29-01-2025 |   Day-37
++-----------------------+
+    =   What is Collection?
+        When multiple data are arranged within one variable it is known an Collection.
+
+    1.  Array is the simplest collection:
+
+        String[] name = {"Draupadi Murmu","Narendra Modi","Naveen Patnaik","Amit Shah"};
+
+        String[][] person = { {"Draupadi Murmu","President","New Delhi"},
+                              {"Narendra Modi","Prime Minister","New Delhi"},
+                              {"Naveen Patnaik","Chief Minister","Bhubaneswar"},
+                              {"Amit Shah","Home Minister","New Delhi"}
+                            };
+
+        String name[] = {"Draupadi Murmu","Narendra Modi","Naveen Patnaik","Amit Shah"};
+        String[] person[] = {"Draupadi Murmu","Narendra Modi","Naveen Patnaik","Amit Shah"};
+
+    2.  List is an ordered collection (also known as a sequence)
+
+        List<String> lNames = new ArrayList<String>();
+        lNames.add("Draupadi Murmu");
+        lNames.add("Narendra Modi");
+        lNames.add("Naveen Patnaik");
+        lNames.add("Amit Shah");
+
+        List<List<String>> lPerson;
+
+    3.  Vector is an array of objects.
+
+        Vector<String> vNames = new Vector<String>();
+        vName.add("Draupadi Murmu");
+        vName.add("Narendra Modi"); 
+        vName.add("Naveen Patnaik");
+        vName.add("Amit Shah");     
+
++----------------------+
+| Thursday, 30-01-2025 |   Day-38
++----------------------+
+    =   JAVASCRIPT
+        What is JavaScript?
+        � JavaScript was designed to add interactivity to HTML pages
+        � JavaScript is a scripting language.
+        � A scripting language is a lightweight programming language
+        � JavaScript is usually embedded directly into HTML pages
+        � JavaScript is an interpreted language (means that scripts execute without preliminary compilation)
+        � Everyone can use JavaScript without purchasing a license
+        � JavaScript programs are executed within the Internet Browser
+
+    =   Which editor is best used for HTML, CSS, JavaScript?
+        Today, the industry is using MS-VS-Code to develop and test programs.
+
+    =   JavaScript program are written within HTML <script>...</script> element.
+        Example:
+            <html>
+                <body>
+                    <script>
+                        document.writeln("Hello World");
+                    </script>
+                </body>
+            </html>
+
+    =   Write as many JavaScript programs from the figures and pattern given in the
+        Question.txt.
+
+        1.  Pyramid: 4 programs
+        2.  Prime Number Generator
+        3.  Multiplication Tables
+
+
++--------------------+
+| Friday, 31-01-2025 |   Day-39
++--------------------+
+    =   js_who.html uploaded in github
+
+    =   JavaScript Array
+
+
++--------------------+
+| Monday, 03-02-2025 |   Day-40
++--------------------+
+    =   Form validation
+
+    =   Validation using Javascript UDF function
+    =   Validation using Regular Expression
+
+
++---------------------+
+| Tuesday, 04-02-2025 |   Day-41
++---------------------+
+    =   Regular expression (regex) simplified
+    =   Write a program to reverse the content of a table horizontally and vertically
+
++-----------------------+
+| Wednesday, 05-02-2025 |   Day-42
++-----------------------+
+    =   HTML/JavaScript <table>
+        Row Add, Edit & Delete
+
++----------------------+
+| Thursday, 06-02-2025 |   Day-43
++----------------------+
+    =   Colour Chooser using colour names in the HTML page.
+
++--------------------+
+| Friday, 07-02-2025 |   Day-44
++--------------------+
+    =   CSS stands for Cascading Style Sheet.
+        CSS are used to style the HTML content.
+        CSS are a pair of property:value;
+        Many pair of CSS are defined to set a decorative presentation to an HTML
+        content.
+
+    =   There are 3 types of CSS:
+        1.  Inline CSS
+            The inline CSS are provided in the common attribute of the element 
+            named STYLE
+                <h1 style='color:red; background=gray;'>Hello World!</h1>
+
+        2.  Internal CSS
+            The internal CSS has next priority in compararision to inline CSS.
+            The internal CSS are defined within the <STYLE>...</STYLE> element.
+
+        3.  External CSS
+            The external CSS are presented in a separate file. The file is then
+            linked to the HTML page. The file is normally named with a .css extension.
+
+    =   Write a HTML page presenting a table with at least 6 columns and 10 rows.
+        The color of the rows will be alternatively lightgray and white.
+        The heading of the page will be CENSUS REPORT
+
++--------------------+
+| Monday, 10-02-2025 |   Day-45
++--------------------+
+    =   What is Bootstrap?
+        Bootstrap is a framework of CSS styles and JavaScript routines.
+
+
++---------------------+
+| Tuesday, 11-02-2025 |
++---------------------+
+    =   Assignments given in Bootstrap.
+
++-----------------------+
+| Wednesday, 12-02-2025 |   Day-46
++-----------------------+
+    =   Java Servlet is a part of Java2EE application.
+
++----------------------+
+| Thursday, 13-02-2025 |   Day-47
++----------------------+
+    =   Write a Java Servlet to take the start number and the end number from
+        the user and print multiplication table from start to end.
