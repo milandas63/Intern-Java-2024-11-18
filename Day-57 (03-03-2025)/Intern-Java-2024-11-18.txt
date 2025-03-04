@@ -2395,3 +2395,30 @@ MILAN DAS                   7978168568  milan.das@iigvarsity.com            mila
 | Monday, 03-03-2025 |   Day-56
 +--------------------+
     =   Write a JSP program to print the data with header from a given SQL statement?
+
+
++---------------------+
+| Tuesday, 04-03-2025 |   Day-57
++---------------------+
+    =   PROJECTS
+        1. LMS (Learning Management System)
+        2. Test-Assessment System
+
+    =   LMS Tables Required
+        1. Subject
+        2. Curriculum
+        3. Student
+        4. 
+
+    =   Test-Assessment Tables Required
+        1. Subject
+        2. Format
+        3. Level
+        4. Marking
+        5. Question
+        6. User
+        7. Login
+        8. TestSetHdr
+        9. TestSetDtl
+       10. ResultSetHdr
+       11. ResultSetDtl
